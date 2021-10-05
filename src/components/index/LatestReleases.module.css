@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto Slab Medium";
+  src: url(../../typography/RobotoSlab-Medium.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Slab Black";
+  src: url(../../typography/RobotoSlab-Black.ttf);
+}
+
+.wrapper {
+  width: 80%;
+  max-width: 80em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  font-family: "Roboto Slab Medium";
+  font-size: 3em;
+}
+
+.singleAlbumWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 30em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.albumArtist {
+  font-family: "Roboto Slab Black";
+  margin-bottom: 0;
+}
+
+.albumTitle {
+  font-family: "Roboto Slab Medium";
+  margin: 0;
+}
+
+.albumCover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  box-shadow: 8px 8px 8px #cab91d;
+}
+
+@media screen and (min-width: 900px) {
+  .albumsWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .singleAlbumWrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .singleAlbumWrapper:first-child {
+    padding-right: 0.75em;
+  }
+
+  .singleAlbumWrapper:last-child {
+    padding-left: 0.75em;
+  }
+}

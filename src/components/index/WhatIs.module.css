@@ -1,0 +1,123 @@
+@font-face {
+  font-family: "Roboto Slab Regular";
+  src: url(../../typography/RobotoSlab-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Slab Light";
+  src: url(../../typography/RobotoSlab-Light.ttf);
+}
+
+.wrapper {
+  position: relative;
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.headerWrapper {
+  background-color: black;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.header {
+  font-family: "Roboto Slab Regular";
+  text-align: center;
+  color: white;
+}
+
+.linesList {
+  list-style: none;
+}
+
+.lineBlack {
+  border-bottom: solid black 10px;
+  margin-bottom: 0.5em;
+  width: 245%;
+}
+
+.lineYellow {
+  border-bottom: solid #cab91d 10px;
+  margin-bottom: 0.5em;
+  width: 245%;
+}
+
+.linesWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  max-width: 80em;
+  height: 30em;
+  margin-left: -10%;
+  z-index: -1;
+}
+
+.linesList {
+  position: absolute;
+
+  left: 100px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.bioWrapper {
+  width: 80%;
+  max-width: 50em;
+  margin-top: 10em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bioText {
+  font-family: "Roboto Slab Light";
+  color: #000000;
+  font-size: 1.4em;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.sharkMan {
+  box-shadow: 4px 4px 4px #cab91d;
+  max-width: 29vw;
+  float: left;
+  margin-right: 0.5em;
+}
+
+@media screen and (min-width: 900px) {
+  .linesList {
+    left: 10px;
+  }
+  .bioWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    max-width: 60em;
+  }
+
+  .bioText {
+    grid-area: 1/1/2/2;
+    font-weight: bold;
+    text-align: center;
+    font-size: 2em;
+    line-height: 1.5;
+  }
+
+  .sharkMan {
+    grid-area: 1/2/2/3;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 15em;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .linesWrapper {
+    margin-top: 23%;
+  }
+}

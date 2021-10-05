@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../../typography/Roboto-Regular.ttf);
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.crabatoad {
+  animation: MoveUpDown 9s linear infinite;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 13em;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.logo {
+  width: 70%;
+  max-width: 28em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2.5em;
+}
+
+.linesWrapperWrapper {
+  position: relative;
+  margin-left: -195px;
+  width: 6em;
+}
+
+.linksList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Roboto-Regular";
+  font-size: calc(18px + 0.5vw);
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  padding: 0.3em;
+}
+
+.link:hover {
+  border-bottom: solid #cab91d 4px;
+}
+
+.linesWrapper {
+  width: 19rem;
+  transform: rotate(-45deg);
+  position: absolute;
+  max-width: 25em;
+  top: 55px;
+  left: 0;
+  right: 500px;
+  bottom: 3px;
+}
+
+.lineBlack {
+  border-bottom: solid black 10px;
+  margin-bottom: 0.5em;
+  width: 245%;
+}
+
+.lineYellow {
+  border-bottom: solid #cab91d 10px;
+  margin-bottom: 0.5em;
+  width: 245%;
+}
