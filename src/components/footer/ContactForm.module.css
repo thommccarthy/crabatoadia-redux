@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Roboto Mono";
+  src: url(../../typography/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold Italic";
+  src: url(../../typography/RobotoCondensed-BoldItalic.ttf);
+}
+
+.bookingWrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 20em;
+}
+
+.bookingWrapper::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3.5em;
+  width: 3.5em;
+  border-left: solid #cab91d 10px;
+  border-top: solid #cab91d 10px;
+}
+
+.bookingWrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 1%;
+  bottom: 3%;
+  height: 3.5em;
+  width: 3.5em;
+  border-right: solid black 10px;
+  border-bottom: solid black 10px;
+}
+
+.bookingText {
+  font-family: "Roboto Mono";
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-style: italic;
+  font-size: 1.8em;
+  padding: 1.6em;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 28em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5em;
+  margin-bottom: 3em;
+}
+
+input[type="text"],
+input[type="email"] {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  padding: 1em;
+  border: solid #cab91d 3px;
+  box-shadow: 5px 5px 5px black;
+}
+
+textarea {
+  border: solid #cab91d 3px;
+  height: 10em;
+  box-shadow: 5px 5px 5px black;
+}
+
+.contactUs {
+  font-family: "Roboto Condensed Bold Italic";
+  font-size: 2em;
+}
