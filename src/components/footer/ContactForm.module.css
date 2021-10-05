@@ -57,7 +57,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 5em;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 input[type="text"],
@@ -78,4 +78,62 @@ textarea {
 .contactUs {
   font-family: "Roboto Condensed Bold Italic";
   font-size: 2em;
+}
+
+.or {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto Condensed Bold Italic";
+  font-size: 2em;
+  text-align: center;
+}
+
+.emailUs {
+  display: block;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto Condensed Bold Italic";
+  font-size: 2em;
+  word-wrap: break-word;
+  text-align: left;
+  margin-top: 1em;
+  max-width: 16ch;
+
+  margin-bottom: 2em;
+}
+
+.emailAddress::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -2%;
+  border-bottom: solid #cab91dd2 12px;
+  height: 1em;
+  width: 7.5em;
+  margin-top: 11%;
+  z-index: -1;
+}
+
+@media screen and (min-width: 900px) {
+  .formGrid {
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 1fr;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 70em;
+  }
+
+  .formWrapper {
+    width: 95%;
+  }
+
+  .emailUs {
+    font-size: 3em;
+    word-wrap: normal;
+  }
 }

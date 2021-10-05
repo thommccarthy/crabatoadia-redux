@@ -12,7 +12,7 @@ const ContactForm = () => {
         </div>
       </div>
       {/* form grid */}
-      <div>
+      <div className={contactFormStyles.formGrid}>
         <div className={contactFormStyles.formWrapper}>
           <form id="contact" className={contactFormStyles.formWrapper}>
             <label className={contactFormStyles.contactUs} for="name">
@@ -23,6 +23,13 @@ const ContactForm = () => {
             <textarea type="text" placeholder="message*" />
           </form>
         </div>
+        <span className={contactFormStyles.or}>-or-</span>
+        <span className={contactFormStyles.emailUs}>
+          email us at{" "}
+          <span className={contactFormStyles.emailAddress}>
+            crabatoadia@gmail.com
+          </span>{" "}
+        </span>
       </div>
     </div>
   )
