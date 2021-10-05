@@ -19,13 +19,22 @@ const Header = () => {
           <StaticImage
             src="../../images/crabatoadia_stamp.png"
             className={headerStyles.logo}
-            imgStyle={{ width: `100%`, display: `block` }}
+            style={{
+              display: `block`,
+              marginLeft: `auto`,
+              marginRight: `auto`,
+            }}
           />
         </div>
         <div>
           <StaticImage
             src="../../images/crabatoad_stamp.jpg"
             className={headerStyles.crabatoad}
+            style={{
+              display: `block`,
+              marginLeft: `auto`,
+              marginRight: `auto`,
+            }}
           />
         </div>
         {/* links */}
