@@ -6,7 +6,9 @@ import { GatsbyImage } from "gatsby-plugin-image"
 const AllArtists = () => {
   const data = useStaticQuery(graphql`
     {
-      artist: allMarkdownRemark {
+      artist: allMarkdownRemark(
+        sort: { fields: [frontmatter___date], order: ASC }
+      ) {
         edges {
           node {
             id
@@ -35,14 +37,19 @@ const AllArtists = () => {
       <h1 className={allArtistsStyles.header}>Artists</h1>
 
       {edges.map(edge => (
-        <div className={allArtistsStyles.featuredPhotoWrapper}>
-          <GatsbyImage
-            className={allArtistsStyles.featuredPhoto}
-            image={
-              edge.node.frontmatter.featuredPhoto.childImageSharp
-                .gatsbyImageData
-            }
-          />
+        <div>
+          <h2 className={allArtistsStyles.artistName}>
+            {edge.node.frontmatter.title}
+          </h2>
+          <div className={allArtistsStyles.featuredPhotoWrapper}>
+            <GatsbyImage
+              className={allArtistsStyles.featuredPhoto}
+              image={
+                edge.node.frontmatter.featuredPhoto.childImageSharp
+                  .gatsbyImageData
+              }
+            />
+          </div>
         </div>
       ))}
     </div>
