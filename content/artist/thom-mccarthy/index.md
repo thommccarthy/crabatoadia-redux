@@ -2,6 +2,7 @@
 title: Thom McCarthy
 date: 2021-10-07T00:58:50.368Z
 description: Thom McCarthy
+featuredPhoto: thom-woods.jpg
 biography: >-
   <!--StartFragment-->
 
