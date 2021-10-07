@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Roboto Mono Bold Italic";
+  src: url(../../typography/RobotoMono-BoldItalic.ttf);
+}
+
+.header {
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Roboto Mono Bold Italic";
+  font-size: 4em;
+  margin-bottom: 3em;
+}
+
+.header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1em;
+  width: 3em;
+  border-bottom: solid #cab91d 16px;
+  margin-top: 0.5em;
+}
+
+.header:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1em;
+  width: 3em;
+  border-bottom: solid black 9px;
+  margin-top: 0.7em;
+}
+
+.featuredPhotoWrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  max-width: 60em;
+  border: solid #cab91d 9px;
+  overflow: hidden;
+}
+
+.featuredPhoto {
+  aspect-ratio: 9/4;
+  display: block;
+  width: 100%;
+  max-width: 60em;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.featuredPhoto:hover {
+  transform: scale(1.02);
+}

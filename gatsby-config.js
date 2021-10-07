@@ -22,7 +22,7 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 800,
+              maxWidth: 1800,
             },
           },
         ],
@@ -35,13 +35,13 @@ module.exports = {
         path: `${__dirname}/src/pages/`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     name: `markdown-pages`,
-    //     path: `${__dirname}/content/artists/`,
-    //   },
-    // },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/content/artist/`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

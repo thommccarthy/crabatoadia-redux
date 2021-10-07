@@ -1,11 +1,12 @@
 import React from "react"
+import AllArtists from "../components/artists/AllArtists"
 import Layout from "../components/layout"
 
 const Artists = () => {
   return (
     <div>
       <Layout>
-        <h1>Artists</h1>
+        <AllArtists />
       </Layout>
     </div>
   )
