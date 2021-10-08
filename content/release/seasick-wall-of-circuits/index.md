@@ -1,5 +1,7 @@
 ---
 title: Seasick Wall of Circuits
+artistName:
+  - Thom McCarthy
 date: 2021-10-08T16:06:59.120Z
 albumArt: seasick-cover.jpg
 description: |-
