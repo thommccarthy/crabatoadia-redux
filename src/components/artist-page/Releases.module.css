@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Roboto Mono Bold";
+  src: url(../../typography/RobotoMono-Bold.ttf);
+}
+
+.releasesGrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.singleAlbum {
+  max-width: 25em;
+}
+
+.albumCover {
+  box-shadow: 8px 8px 8px #cab91d;
+}
+
+.albumArtist {
+  font-family: "Roboto Slab Black";
+}
+
+.albumTitle {
+  font-family: "Roboto Mono Bold";
+}

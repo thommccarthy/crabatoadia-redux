@@ -1,8 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
-import { graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as artistPageStyles from "./artist-page.module.css"
+import Releases from "../components/artist-page/Releases"
 
 export default function ArtistPage({ data }) {
   return (
@@ -27,6 +28,10 @@ export default function ArtistPage({ data }) {
                 __html: data.markdownRemark.frontmatter.biography,
               }}
             />
+          </div>
+          <div className={artistPageStyles.bioWrapper}>
+            <h3 className={artistPageStyles.bioHeader}>Releases</h3>
+            <Releases artistName={data.markdownRemark.frontmatter.title} />
           </div>
         </div>
       </Layout>
