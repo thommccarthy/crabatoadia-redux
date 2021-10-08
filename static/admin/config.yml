@@ -41,7 +41,7 @@ collections:
           name: "artistName",
           allow_add: true,
           widget: "list",
-          summary: '{{fields.artist}}'
+          summary: "{{fields.artist}}",
           field: { label: "Artist", name: "artist", widget: "string" },
         }
       - { label: "Publish Date", name: "date", widget: "datetime" }
