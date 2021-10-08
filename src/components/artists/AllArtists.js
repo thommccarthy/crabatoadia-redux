@@ -35,23 +35,24 @@ const AllArtists = () => {
   return (
     <div className={allArtistsStyles.wrapper}>
       <h1 className={allArtistsStyles.header}>Artists</h1>
-
-      {edges.map(edge => (
-        <div>
-          <h2 className={allArtistsStyles.artistName}>
-            {edge.node.frontmatter.title}
-          </h2>
-          <div className={allArtistsStyles.featuredPhotoWrapper}>
-            <GatsbyImage
-              className={allArtistsStyles.featuredPhoto}
-              image={
-                edge.node.frontmatter.featuredPhoto.childImageSharp
-                  .gatsbyImageData
-              }
-            />
+      <div className={allArtistsStyles.artistsGrid}>
+        {edges.map(edge => (
+          <div>
+            <div className={allArtistsStyles.featuredPhotoWrapper}>
+              <GatsbyImage
+                className={allArtistsStyles.featuredPhoto}
+                image={
+                  edge.node.frontmatter.featuredPhoto.childImageSharp
+                    .gatsbyImageData
+                }
+              />
+            </div>
+            <h2 className={allArtistsStyles.artistName}>
+              {edge.node.frontmatter.title}
+            </h2>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   )
 }
