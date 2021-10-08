@@ -42,13 +42,13 @@ module.exports = {
         path: `${__dirname}/content/artist/`,
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `markdown-pages`,
-        path: `${__dirname}/content/release/`,
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `markdown-pages`,
+    //     path: `${__dirname}/content/release/`,
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
