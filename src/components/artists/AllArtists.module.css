@@ -8,15 +8,23 @@
   src: url(../../typography/RobotoSlab-Bold.ttf);
 }
 
+.wrapper {
+  max-width: 75em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header {
   display: block;
+  /* max-width: 35em; */
   position: relative;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto Mono Bold Italic";
-  font-size: 4em;
-  margin-bottom: 1.3em;
+  font-size: 2.1em;
+  margin-bottom: 0.75em;
 }
 
 .header::after {
@@ -31,7 +39,7 @@
   margin-right: auto;
   height: 1em;
   width: 3em;
-  border-bottom: solid #cab91d 16px;
+  border-bottom: solid #cab91d 12px;
   margin-top: 0.5em;
 }
 
@@ -47,7 +55,7 @@
   margin-right: auto;
   height: 1em;
   width: 3em;
-  border-bottom: solid black 9px;
+  border-bottom: solid black 11px;
   margin-top: 0.7em;
 }
 
@@ -56,7 +64,7 @@
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
-  max-width: 90%;
+  max-width: 75em;
   justify-content: center;
 }
 
@@ -74,11 +82,12 @@
 
 .artistName {
   display: block;
-  max-width: 10em;
-  font-size: 2em;
+  width: 85%;
+  max-width: 35em;
+  font-size: 1.2em;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  text-align: left;
   font-family: "Roboto Slab Bold";
 }
 
