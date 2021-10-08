@@ -2,11 +2,29 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
+import * as artistPageStyles from "./artist-page.module.css"
 
 export default function ArtistPage({ data }) {
   return (
     <div>
-      <Layout><GatsbyImage image={data.markdownRemark.frontmatter.featuredPhoto.childImageSharp.gatsbyImageData}/></Layout>
+      <Layout>
+        <div className={artistPageStyles.wrapper}>
+          <h1 className={artistPageStyles.title}>
+            {data.markdownRemark.frontmatter.title}
+          </h1>
+          <GatsbyImage
+            image={
+              data.markdownRemark.frontmatter.featuredPhoto.childImageSharp
+                .gatsbyImageData
+            }
+            className={artistPageStyles.featuredPhoto}
+          />
+          <div className={artistPageStyles.bioWrapper}>
+            <h3 className={artistPageStyles.bioHeader}>Biography</h3>
+            <p className={artistPageStyles.bioText}></p>
+          </div>
+        </div>
+      </Layout>
     </div>
   )
 }

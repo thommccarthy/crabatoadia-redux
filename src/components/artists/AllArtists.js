@@ -8,6 +8,7 @@ const AllArtists = () => {
     {
       artist: allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: ASC }
+        filter: { fileAbsolutePath: { regex: "/content/artist/" } }
       ) {
         edges {
           node {

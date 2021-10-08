@@ -31,6 +31,19 @@ exports.createPages = async ({ graphql, actions }) => {
           }
         }
       }
+
+      releases: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/content/release/" } }
+      ) {
+        edges {
+          node {
+            id
+            fields {
+              slug
+            }
+          }
+        }
+      }
     }
   `)
 
@@ -38,6 +51,16 @@ exports.createPages = async ({ graphql, actions }) => {
     createPage({
       path: `artists${node.fields.slug}`,
       component: path.resolve(`./src/templates/artist-page.js`),
+      context: {
+        slug: node.fields.slug,
+      },
+    })
+  })
+
+  result.data.releases.edges.forEach(({ node }) => {
+    createPage({
+      path: `releases${node.fields.slug}`,
+      component: path.resolve(`./src/templates/release-page.js`),
       context: {
         slug: node.fields.slug,
       },

@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Roboto Mono Bold Italic";
+  src: url(../typography/RobotoMono-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold Italic";
+  src: url(../typography/RobotoCondensed-BoldItalic.ttf);
+}
+
+.wrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 80em;
+}
+
+.featuredPhoto {
+  width: 100%;
+  aspect-ratio: 9/4;
+}
+
+.title {
+  font-family: "Roboto Mono Bold Italic";
+}
+
+.bioWrapper {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 80em;
+}
+
+.bioHeader {
+  font-family: "Roboto Condensed Bold Italic";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: solid black 1px;
+  padding-bottom: 0.5em;
+}
+
+.bioHeader::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 0.6em;
+  height: 0.1em;
+  width: 100%;
+  max-width: 80em;
+  border-bottom: solid #cab91d 1px;
+}
+
+.bioText {
+}
