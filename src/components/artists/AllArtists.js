@@ -12,6 +12,9 @@ const AllArtists = () => {
         edges {
           node {
             id
+            fields {
+              slug
+            }
             frontmatter {
               title
               featuredPhoto {
@@ -38,7 +41,10 @@ const AllArtists = () => {
       <div className={allArtistsStyles.artistsGrid}>
         {edges.map(edge => (
           <div>
-            <div className={allArtistsStyles.featuredPhotoWrapper}>
+            <Link
+              to={`${__dirname}artists${edge.node.fields.slug}`}
+              className={allArtistsStyles.featuredPhotoWrapper}
+            >
               <GatsbyImage
                 className={allArtistsStyles.featuredPhoto}
                 image={
@@ -46,7 +52,7 @@ const AllArtists = () => {
                     .gatsbyImageData
                 }
               />
-            </div>
+            </Link>
             <h2 className={allArtistsStyles.artistName}>
               {edge.node.frontmatter.title}
             </h2>
