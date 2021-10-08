@@ -21,7 +21,12 @@ export default function ArtistPage({ data }) {
           />
           <div className={artistPageStyles.bioWrapper}>
             <h3 className={artistPageStyles.bioHeader}>Biography</h3>
-            <p className={artistPageStyles.bioText}></p>
+            <div
+              className={artistPageStyles.bioText}
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.frontmatter.biography,
+              }}
+            />
           </div>
         </div>
       </Layout>
@@ -34,6 +39,7 @@ export const query = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       frontmatter {
+        biography
         title
         date(formatString: "MMMM DD, YYYY")
         featuredPhoto {

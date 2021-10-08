@@ -13,7 +13,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 90%;
-  max-width: 80em;
+  max-width: 70em;
 }
 
 .featuredPhoto {
@@ -30,6 +30,11 @@
   position: relative;
   width: 100%;
   max-width: 80em;
+}
+
+.bioText {
+  font-size: 1.3em;
+  font-family: "Roboto Slab";
 }
 
 .bioHeader {
