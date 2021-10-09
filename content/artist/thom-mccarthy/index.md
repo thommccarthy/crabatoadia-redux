@@ -7,7 +7,7 @@ biography: >-
   <!--StartFragment-->
 
 
-  Thom McCarthy is a guitarist and songwriter based in West Philadelphia, who works as an optician by day. Originally from the tiny unincorporated community of Locust Gap, Pennsylvania, Thom was obsessed with music from an early age, but his whole perception of the world changed when he discovered Django Reinhardt. He remains intent on his study of the guitar, drawing influence from masters in various genres from classical to calypso. 
+  Thom McCarthy is a guitarist and songwriter based in West Philadelphia. Originally from the tiny unincorporated community of Locust Gap, Pennsylvania, Thom was obsessed with music from an early age, but his whole perception of the world changed when he discovered Django Reinhardt. He remains intent on his study of the guitar, drawing influence from masters in various genres from classical to calypso. 
 
 
   His latest full-length release, Marvin the Giant, evokes an otherworldly mood with finger-plucked nylon strings resonating over atmospheric layers. Thom's voice sinks and soars through earnest melodies, singing imagery of bacteria and the human soul.
