@@ -28,4 +28,5 @@ description: |-
 
   <!--EndFragment-->
 bandcampLink: https://rockykaminski.bandcamp.com/album/bottomless-pit-the-cannibal-song
+bandcampEmbed: '"https://bandcamp.com/EmbeddedPlayer/album=3042889294/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"'
 ---
