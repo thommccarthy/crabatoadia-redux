@@ -16,16 +16,19 @@ const Header = () => {
       </div>
       <div className={headerStyles.headerGrid}>
         <div>
-          <StaticImage
-            src="../../images/crabatoadia_stamp.png"
-            className={headerStyles.logo}
-            style={{
-              display: `block`,
-              marginLeft: `auto`,
-              marginRight: `auto`,
-            }}
-          />
+          <Link to="/">
+            <StaticImage
+              src="../../images/crabatoadia_stamp.png"
+              className={headerStyles.logo}
+              style={{
+                display: `block`,
+                marginLeft: `auto`,
+                marginRight: `auto`,
+              }}
+            />
+          </Link>
         </div>
+
         <div>
           <StaticImage
             src="../../images/crabatoad_stamp.jpg"
