@@ -27,6 +27,8 @@
   max-width: 30em;
   margin-top: 2em;
   margin-bottom: 2em;
+  text-decoration: none;
+  color: black;
 }
 
 .albumArtist {
