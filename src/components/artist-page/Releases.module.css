@@ -10,6 +10,7 @@
 
 .singleAlbum {
   max-width: 25em;
+  text-decoration: none;
 }
 
 .albumCover {
@@ -18,8 +19,14 @@
 
 .albumArtist {
   font-family: "Roboto Slab Black";
+  text-decoration: none;
+  font-style: normal;
+
+  color: black;
 }
 
 .albumTitle {
   font-family: "Roboto Mono Bold";
+  text-decoration: none;
+  color: black;
 }

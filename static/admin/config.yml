@@ -36,6 +36,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Release Date", name: "releaseDate", widget: "datetime" }
       - {
           label: "Artist Name",
           name: "artistName",

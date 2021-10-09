@@ -1,5 +1,6 @@
 import React from "react"
 import * as latestReleasesStyles from "./LatestReleases.module.css"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 const LatestReleases = () => {
