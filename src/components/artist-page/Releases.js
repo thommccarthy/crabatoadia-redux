@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as releasesStyles from "./Releases.module.css"
 
@@ -11,6 +11,9 @@ export default function Releases({ artistName }) {
       ) {
         edges {
           node {
+            fields {
+              slug
+            }
             id
             frontmatter {
               artistName
@@ -42,7 +45,10 @@ export default function Releases({ artistName }) {
   return (
     <div className={releasesStyles.releasesGrid}>
       {filteredReleases.map(edge => (
-        <div className={releasesStyles.singleAlbum}>
+        <Link
+          to={`../../releases${edge.node.fields.slug}`}
+          className={releasesStyles.singleAlbum}
+        >
           <GatsbyImage
             className={releasesStyles.albumCover}
             image={
@@ -55,7 +61,7 @@ export default function Releases({ artistName }) {
           <p className={releasesStyles.albumTitle}>
             {edge.node.frontmatter.title}
           </p>
-        </div>
+        </Link>
       ))}
     </div>
   )

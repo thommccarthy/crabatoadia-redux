@@ -20,10 +20,10 @@ export default function ReleasePage({ data }) {
           />
           <iframe
             style={{ border: `0`, width: `400px`, height: `274px` }}
-            src="https://bandcamp.com/EmbeddedPlayer/album=4280087140/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/"
+            src={`${data.markdownRemark.frontmatter.bandcampEmbed}`}
             seamless
           >
-            <a href="https://thommccarthy.bandcamp.com/album/seasick-wall-of-circuits">
+            <a href={data.markdownRemark.frontmatter.bandcampLink}>
               Seasick Wall of Circuits by Thom McCarthy
             </a>
           </iframe>
@@ -40,6 +40,7 @@ export const query = graphql`
       frontmatter {
         artistName
         bandcampLink
+        bandcampEmbed
         date
         albumArt {
           childImageSharp {
