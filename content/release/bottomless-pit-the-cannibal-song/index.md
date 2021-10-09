@@ -1,5 +1,6 @@
 ---
 title: Bottomless Pit/The Cannibal Song
+releaseDate: 2020-11-23T23:28:07.235Z
 artistName:
   - Rocky Kaminski
   - Quasaria Bognes
