@@ -1,5 +1,6 @@
 ---
 title: Seasick Wall of Circuits
+releaseDate: 2020-10-16T06:25:00.000Z
 artistName:
   - Thom McCarthy
 date: 2021-10-08T16:06:59.120Z
