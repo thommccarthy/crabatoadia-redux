@@ -1,0 +1,13 @@
+.wrapper {
+  width: 90%;
+  max-width: 75em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.albumArt {
+  max-width: 40em;
+  width: 100%;
+}

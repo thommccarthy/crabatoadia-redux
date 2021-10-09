@@ -8,6 +8,11 @@
   src: url(../typography/RobotoCondensed-BoldItalic.ttf);
 }
 
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../typography/RobotoSlab-Regular.ttf);
+}
+
 .wrapper {
   display: block;
   margin-left: auto;

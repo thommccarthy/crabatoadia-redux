@@ -50,7 +50,7 @@ export default function Releases({ artistName }) {
             }
           />
           <p className={releasesStyles.albumArtist}>
-            {edge.node.frontmatter.artistName}
+            {edge.node.frontmatter.artistName[0]}
           </p>
           <p className={releasesStyles.albumTitle}>
             {edge.node.frontmatter.title}
