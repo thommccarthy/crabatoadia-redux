@@ -17,4 +17,5 @@ description: |-
 
   <!--EndFragment-->
 bandcampLink: https://thommccarthy.bandcamp.com/album/seasick-wall-of-circuits
+bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=4280087140/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/
 ---
