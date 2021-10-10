@@ -7,8 +7,8 @@ const LatestReleases = () => {
   const releaseData = useStaticQuery(graphql`
     query {
       releases: allMarkdownRemark(
+        sort: { fields: [frontmatter___releaseDate], order: DESC }
         filter: { fileAbsolutePath: { regex: "/content/release/" } }
-        limit: 2
       ) {
         edges {
           node {

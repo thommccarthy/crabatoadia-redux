@@ -8,6 +8,7 @@ export default function Releases({ artistName }) {
     query query {
       allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/release/" } }
+        sort: { fields: [frontmatter___releaseDate], order: DESC }
       ) {
         edges {
           node {
@@ -19,6 +20,7 @@ export default function Releases({ artistName }) {
               artistName
               bandcampLink
               date
+              releaseDate
               albumArt {
                 childImageSharp {
                   gatsbyImageData

@@ -9,7 +9,7 @@
   justify-content: space-between; */
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(315px, 375px));
+  grid-template-columns: repeat(auto-fit, minmax(315px, 372px));
 }
 
 /* .releasesGrid:first-child {
