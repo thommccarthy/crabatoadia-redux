@@ -1,6 +1,6 @@
 ---
 title: Marvin the Giant
-releaseDate: 2021-10-10T01:10:56.705Z
+releaseDate: 2016-12-17T02:10:56.705Z
 artistName:
   - Thom McCarthy
 date: 2016-12-13T02:10:56.717Z
