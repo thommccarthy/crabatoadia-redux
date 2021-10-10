@@ -4,12 +4,20 @@
 }
 
 .releasesGrid {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(315px, 375px));
 }
 
+/* .releasesGrid:first-child {
+  margin-right: 1.5em;
+} */
+
 .singleAlbum {
-  max-width: 25em;
+  max-width: 21em;
   text-decoration: none;
 }
 

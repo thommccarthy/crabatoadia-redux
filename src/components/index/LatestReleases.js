@@ -58,22 +58,6 @@ const LatestReleases = () => {
       </div>
       {/* seasick */}
       <div className={latestReleasesStyles.albumsWrapper}>
-        {/* Newest Album */}
-        <Link
-          to={`/releases${newestAlbum.slug}`}
-          className={latestReleasesStyles.singleAlbumWrapper}
-        >
-          <GatsbyImage
-            className={latestReleasesStyles.albumCover}
-            image={newestAlbum.albumCover}
-          />
-          <h3 className={latestReleasesStyles.albumArtist}>
-            {newestAlbum.albumArtist[0]}
-          </h3>
-          <p className={latestReleasesStyles.albumTitle}>
-            {newestAlbum.albumTitle}
-          </p>
-        </Link>
         {/* second newest album */}
         <Link
           to={`/releases${secondNewestAlbum.slug}`}
@@ -88,6 +72,22 @@ const LatestReleases = () => {
           </h3>
           <p className={latestReleasesStyles.albumTitle}>
             {secondNewestAlbum.albumTitle}
+          </p>
+        </Link>
+        {/* Newest Album */}
+        <Link
+          to={`/releases${newestAlbum.slug}`}
+          className={latestReleasesStyles.singleAlbumWrapper}
+        >
+          <GatsbyImage
+            className={latestReleasesStyles.albumCover}
+            image={newestAlbum.albumCover}
+          />
+          <h3 className={latestReleasesStyles.albumArtist}>
+            {newestAlbum.albumArtist[0]}
+          </h3>
+          <p className={latestReleasesStyles.albumTitle}>
+            {newestAlbum.albumTitle}
           </p>
         </Link>
       </div>
