@@ -16,5 +16,5 @@ description: |-
   \
   ©2016 Crabatoadia
 bandcampLink: https://thommccarthy.bandcamp.com/album/marvin-the-giant
-bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=868879349/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/
+bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=868879349/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
 ---
