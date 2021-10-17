@@ -6,13 +6,11 @@ artistName:
 date: 2021-10-10T01:14:52.532Z
 albumArt: ripefruitcover.jpg
 description: |-
-  Little two song EP for you.
+  released February 21, 2015
 
-  ### credits
-
-  released February 21, 2015\
+  performed, recorded, mixed and mastered by Thom McCarthy\
   \
   Cover art by Andrea Poulsen
 bandcampLink: https://thommccarthy.bandcamp.com/album/ripe-fruit-unlawful-wilderness
-bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=1158500326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/
+bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=1158500326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
 ---
