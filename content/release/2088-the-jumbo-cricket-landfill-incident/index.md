@@ -23,3 +23,12 @@ description: |-
 bandcampLink: https://rockykaminski.bandcamp.com/album/2088-the-jumbo-cricket-landfill-incident
 bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=4149813021/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
 ---
+October 21, 2015
+
+Rocky Kaminski: Guitar, Vox, Bass, Percussion
+
+Quasaria Bognes: Keys, Vox, Theremin
+
+Jeremy Keim-Shenk: Saxophone
+
+mixed and mastered by Thom McCarthy
