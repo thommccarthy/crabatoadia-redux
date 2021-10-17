@@ -14,7 +14,7 @@ description: |-
   \
   Album artwork by Andrea Poulsen
 bandcampLink: https://thommccarthy.bandcamp.com/album/seasick-wall-of-circuits
-bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=4280087140/size=large/bgcol=ffffff/linkcol=0687f5/transparent=true/
+bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=4280087140/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
 ---
 released October 16, 2020\
 \
