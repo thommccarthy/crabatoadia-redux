@@ -12,5 +12,9 @@ description: |-
   \
   Cover art by Andrea Poulsen
 bandcampLink: https://thommccarthy.bandcamp.com/album/ripe-fruit-unlawful-wilderness
-bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=1158500326/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
+bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=1158500326/size=large/bgcol=ffffff/linkcol=e99708/tracklist=false/artwork=small/transparent=true/
 ---
+released February 21, 2015
+
+performed, recorded, mixed and mastered by Thom McCarthy\
+Cover art by Andrea Poulsen
