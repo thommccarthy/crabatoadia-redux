@@ -16,3 +16,10 @@ description: |-
 bandcampLink: https://thommccarthy.bandcamp.com/album/seasick-wall-of-circuits
 bandcampEmbed: https://bandcamp.com/EmbeddedPlayer/album=4280087140/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/transparent=true/
 ---
+released October 16, 2020\
+\
+All songs written, performed and recorded by Thom McCarthy\
+Mixed/Mastered by Kevin Millen\
+Additional vocal harmonies on Track 1 by Andrea Poulsen\
+\
+Album artwork by Andrea Poulsen
