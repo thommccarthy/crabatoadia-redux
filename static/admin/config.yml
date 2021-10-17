@@ -50,3 +50,4 @@ collections:
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Bandcamp Link", name: "bandcampLink", widget: "string" }
       - { label: "Bandcamp Embed src", name: "bandcampEmbed", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }

@@ -1,13 +1,79 @@
+@font-face {
+  font-family: "Roboto Mono Bold Italic";
+  src: url(../typography/RobotoMono-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Condensed Bold Italic";
+  src: url(../typography/RobotoCondensed-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: "Roboto Slab";
+  src: url(../typography/RobotoSlab-Regular.ttf);
+}
+
 .wrapper {
   width: 90%;
-  max-width: 75em;
+  max-width: 65em;
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: relative;
 }
 
+.coverAndBandcampWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.bandcampWrapper {
+  display: block;
+  position: relative;
+  /* margin-left: auto;
+  margin-right: auto; */
+}
+
 .albumArt {
-  max-width: 40em;
+  max-width: 35em;
   width: 100%;
+}
+
+.artistName {
+  font-family: "Roboto Mono Bold Italic";
+}
+
+.albumTitle {
+  font-family: "Roboto Condensed Bold Italic";
+  font-style: italic;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-bottom: solid black 1px;
+  padding-bottom: 0.5em;
+}
+
+.albumTitle::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 0.6em;
+  height: 0.1em;
+  width: 100%;
+  max-width: 80em;
+  border-bottom: solid #cab91d 1px;
+}
+
+.creditsWrapper {
+  display: block;
+  position: relative;
+  min-width: 10em;
+  max-width: 30em;
+  padding: 2em;
+}
+
+.credits {
+  font-family: "Roboto Slab";
+  line-height: 2;
+  font-size: 1.3em;
 }
