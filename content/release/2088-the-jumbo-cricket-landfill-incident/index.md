@@ -9,9 +9,15 @@ albumArt: jumbo-cricket-cover.jpg
 description: |-
   October 21, 2015
 
+
+
   Rocky Kaminski: Guitar, Vox, Bass, Percussion
+
   Quasaria Bognes: Keys, Vox, Theremin
+
   Jeremy Keim-Shenk: Saxophone
+
+
 
   mixed and mastered by Thom McCarthy
 bandcampLink: https://rockykaminski.bandcamp.com/album/2088-the-jumbo-cricket-landfill-incident
