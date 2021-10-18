@@ -17,30 +17,40 @@ export default function ReleasePage({ data }) {
           </h3>
           {/* cover and bandcamp embed */}
           <div className={releasePageStyles.coverAndBandcampWrapper}>
-            {/* <GatsbyImage
+            <GatsbyImage
               className={releasePageStyles.albumArt}
               image={
                 data.markdownRemark.frontmatter.albumArt.childImageSharp
                   .gatsbyImageData
               }
-            /> */}
+            />
             <div className={releasePageStyles.bandcampWrapper}>
-              <iframe
-                style={{ border: `0`, width: `390px`, height: `510px` }}
-                src={`${data.markdownRemark.frontmatter.bandcampEmbed}`}
-                seamless
-              >
-                <a href={data.markdownRemark.frontmatter.bandcampLink}></a>
-              </iframe>
+              <div className={releasePageStyles.playerAndHeaderWrapper}>
+                <h4 className={releasePageStyles.listenHeader}>Listen</h4>
+                <iframe
+                  style={{
+                    border: `0`,
+                    width: `289px`,
+                    height: `431px`,
+                    display: `block`,
+                    marginLeft: `auto`,
+                    marginRight: `auto`,
+                  }}
+                  src={`${data.markdownRemark.frontmatter.bandcampEmbed}`}
+                  seamless
+                >
+                  <a href={data.markdownRemark.frontmatter.bandcampLink}></a>
+                </iframe>
+              </div>
             </div>
-            <div class={releasePageStyles.creditsWrapper}>
-              <div
-                class={releasePageStyles.credits}
-                dangerouslySetInnerHTML={{
-                  __html: data.markdownRemark.frontmatter.description,
-                }}
-              ></div>
-            </div>
+          </div>
+          <div class={releasePageStyles.creditsWrapper}>
+            <div
+              class={releasePageStyles.credits}
+              dangerouslySetInnerHTML={{
+                __html: data.markdownRemark.html,
+              }}
+            ></div>
           </div>
         </div>
       </Layout>
@@ -52,7 +62,7 @@ export const query = graphql`
   query ReleaseQuery($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-
+      html
       frontmatter {
         artistName
         bandcampLink

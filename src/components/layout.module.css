@@ -12,3 +12,7 @@
 ::-webkit-scrollbar-thumb {
   background: #cab91d;
 }
+
+body {
+  max-width: 100%;
+}

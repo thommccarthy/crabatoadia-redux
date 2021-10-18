@@ -3,10 +3,11 @@ import { StaticImage } from "gatsby-plugin-image"
 import * as headerStyles from "./header.module.css"
 import { HiMenu } from "react-icons/hi"
 import { Link } from "gatsby"
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = () => {
   return (
-    <div>
+    <div className={headerStyles.wrapper}>
       <div className={headerStyles.linesWrapperWrapper}>
         <div className={headerStyles.linesWrapper}>
           <div className={headerStyles.lineBlack}></div>
@@ -62,9 +63,12 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <Link className={headerStyles.link} to="/">
+            <a
+              onClick={() => scrollTo("#footer")}
+              className={headerStyles.link}
+            >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

@@ -3,6 +3,10 @@
   src: url(../../typography/Roboto-Regular.ttf);
 }
 
+.wrapper {
+  max-width: 100%;
+}
+
 .headerGrid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -27,23 +31,24 @@
 }
 
 .logo {
-  width: 70%;
+  width: 90%;
   max-width: 28em;
-  display: block;
+  /* had to use important here cause there's a bug in gatsby static image where i can only get auto margins to work on deployment if i go inline */
+  /* display: none !important; */
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2.5em;
+  margin-top: 5.6em;
 }
 
 .linesWrapperWrapper {
-  position: relative;
+  position: absolute;
   margin-left: -195px;
   width: 6em;
 }
 
 .linksList {
   list-style: none;
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   font-family: "Roboto-Regular";
   font-size: calc(18px + 0.5vw);
@@ -61,11 +66,11 @@
 }
 
 .linesWrapper {
-  width: 19rem;
+  width: 15rem;
   transform: rotate(-45deg);
   position: absolute;
   max-width: 25em;
-  top: 55px;
+  top: 95px;
   left: 0;
   right: 500px;
   bottom: 3px;
@@ -81,4 +86,16 @@
   border-bottom: solid #cab91d 10px;
   margin-bottom: 0.5em;
   width: 245%;
+}
+
+@media screen and (min-width: 650px) {
+  .linksList {
+    display: flex;
+  }
+
+  .logo {
+    display: block !important;
+    margin-top: 2.5em;
+    width: 70%;
+  }
 }

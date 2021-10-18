@@ -4,7 +4,7 @@ import * as footerStyles from "./Footer.module.css"
 
 const Footer = () => {
   return (
-    <div className={footerStyles.wrapper}>
+    <div id="footer" className={footerStyles.wrapper}>
       <ContactForm />
     </div>
   )

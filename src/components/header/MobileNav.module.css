@@ -1,0 +1,135 @@
+.ul {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 100%;
+}
+
+.logo {
+  position: relative;
+  width: 70%;
+  /* max-width: 10em; */
+  justify-items: flex-start;
+}
+
+.link {
+  list-style: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-family: "Roboto Mono";
+  font-size: calc(24px + 1vw);
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: -2px;
+  text-shadow: 2px 2px #cab91d;
+}
+
+.socialLink {
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+
+  max-width: 100%;
+  height: 100vh;
+  background: white;
+  z-index: 100;
+  text-align: center;
+  overflow: hidden;
+  top: -100vh;
+  left: 0;
+  transition: 0.4s;
+}
+
+.socialIcons {
+  font-size: 1.9em;
+  padding-top: 1em;
+}
+
+.icon {
+  padding-right: 0.25em;
+  padding-left: 0.25em;
+}
+
+.closeIcon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 3%;
+  right: 4%;
+  font-size: 1.6em;
+  border-radius: 1%;
+  padding: 0.01em;
+  box-shadow: 4px 3px 3px #cab91d;
+  color: #cab91d;
+  background: rgba(0, 0, 0, 0.904);
+  z-index: 99;
+}
+
+.menuIcon {
+  display: block;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  font-size: 3em;
+  color: #cab91d;
+  z-index: 90;
+  background: black;
+  padding: 0.06em;
+  transition-timing-function: ease-in;
+  transition: 1s;
+  height: 1em;
+  width: 1em;
+}
+
+.menuIconWrapper {
+  display: block;
+  position: absolute;
+  top: 3%;
+  right: 4%;
+  box-shadow: 6px 4px 4px #cab91d;
+  -webkit-box-shadow: 6px 4px 4px #cab91d;
+  height: 3.3em;
+  width: 3.3em;
+  z-index: 91;
+}
+
+.menuText {
+  display: block;
+  color: rgba(245, 215, 151, 1);
+  z-index: 150;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closeMenu {
+  top: -100vh !important;
+}
+
+@media screen and (min-width: 650px) {
+  .menuIcon {
+    display: none;
+  }
+
+  .menuIconWrapper {
+    display: none;
+  }
+
+  .wrapper {
+    display: none;
+  }
+}
