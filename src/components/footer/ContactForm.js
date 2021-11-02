@@ -19,8 +19,11 @@ const ContactForm = () => {
             id="contact"
             method="POST"
             data-netlify="true"
+            data-netlify-honeypot="bot-field"
             className={contactFormStyles.formWrapper}
           >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="contact" value="contact"></input>
             <label className={contactFormStyles.contactUs} for="name">
               Contact Us
             </label>
