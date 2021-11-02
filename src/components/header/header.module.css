@@ -59,10 +59,27 @@
   color: black;
   cursor: pointer;
   padding: 0.3em;
+  transition: 0.1s;
 }
 
-.link:hover {
-  border-bottom: solid #cab91d 4px;
+.linkWrapper {
+  position: relative;
+}
+
+.link:hover::after {
+  content: "";
+  z-index: -1;
+  transition: 0.2s;
+  position: absolute;
+
+  width: 80%;
+  height: 13px;
+  left: 1%;
+  top: 9%;
+  margin-right: auto;
+  margin-left: 0;
+  background: #cab91da1;
+  border-bottom: solid black 3px;
 }
 
 .linesWrapper {

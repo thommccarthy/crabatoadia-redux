@@ -28,6 +28,11 @@
   gap: 0.5em;
 }
 
+.albumArt {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bandcampWrapper {
   display: flex;
   justify-content: center;
@@ -35,9 +40,9 @@
   position: relative;
   width: 100%;
   padding: 1em;
-  /* margin-left: auto;
-  margin-right: auto; */
-  max-width: 24em;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 18em;
   background-color: black;
   border-top: solid #cab91d 8px;
   border-bottom: solid #cab91d 8px;
@@ -120,5 +125,6 @@
 
   .albumArt {
     grid-area: 1/1/2/4;
+    margin-left: 0;
   }
 }

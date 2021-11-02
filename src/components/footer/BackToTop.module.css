@@ -1,0 +1,33 @@
+.backToTopButton {
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  height: 8em;
+  background: black;
+  border-top: solid #cab91d 8px;
+  border-bottom: solid #cab91d 8px;
+  box-shadow: 9px 9px 9px 9px black;
+}
+
+.backToTopButton:hover {
+  opacity: 0.9;
+}
+
+.arrowWrapper {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.copyright {
+  font-family: "Roboto Slab";
+  text-align: center;
+  font-style: italic;
+}
+
+.arrow {
+  transform: rotate(-90deg);
+  width: 7em;
+  margin-left: auto;
+  margin-right: auto;
+}
