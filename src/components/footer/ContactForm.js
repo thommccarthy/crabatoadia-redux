@@ -27,6 +27,9 @@ const ContactForm = () => {
             <input type="text" id="name" name="name" placeholder="name*" />
             <input type="email" id="email" name="email" placeholder="email*" />
             <textarea type="text" placeholder="message*" />
+            <button className={contactFormStyles.submitButton} type="submit">
+              Submit
+            </button>
           </form>
           {/* form end */}
         </div>
