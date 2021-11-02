@@ -19,10 +19,12 @@ const WhatIs = () => {
       </div>
       {/* bio */}
       <div className={whatIsStyles.bioWrapper}>
-        <StaticImage
-          src="../../images/index/shark-man.jpg"
-          className={whatIsStyles.sharkMan}
-        />
+        <div className={whatIsStyles.sharkManWrapper}>
+          <StaticImage
+            src="../../images/index/shark-man.jpg"
+            className={whatIsStyles.sharkMan}
+          />
+        </div>
         <p className={whatIsStyles.bioText}>
           Crabatoadia is the joint endeavor of Thom McCarthy and Andrea Poulsen,
           providing a platform for presenting their creative musical projects.

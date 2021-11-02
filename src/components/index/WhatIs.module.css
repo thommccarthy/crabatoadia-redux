@@ -86,11 +86,15 @@
   text-align: center;
 }
 
-.sharkMan {
+.sharkManWrapper {
   display: none;
+}
+
+.sharkMan {
   box-shadow: 4px 4px 4px #cab91d;
-  max-width: 29vw;
-  float: left;
+  max-width: 6em;
+
+  float: right;
   margin-right: 0.5em;
 }
 
@@ -113,11 +117,17 @@
     line-height: 1.5;
   }
 
-  .sharkMan {
+  .sharkManWrapper {
     grid-area: 1/2/2/3;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    max-width: 15em;
+  }
+
+  .sharkMan {
     max-width: 15em;
   }
 }
