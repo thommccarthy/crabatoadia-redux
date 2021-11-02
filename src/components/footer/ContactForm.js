@@ -100,9 +100,12 @@ const ContactForm = () => {
         <span className={contactFormStyles.or}>-or-</span>
         <span className={contactFormStyles.emailUs}>
           email us at{" "}
-          <span className={contactFormStyles.emailAddress}>
+          <a
+            href="mailto:crabatoadia@gmail.com"
+            className={contactFormStyles.emailAddress}
+          >
             crabatoadia@gmail.com
-          </span>{" "}
+          </a>{" "}
         </span>
       </div>
     </div>

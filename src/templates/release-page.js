@@ -44,6 +44,7 @@ export default function ReleasePage({ data }) {
               </div>
             </div>
           </div>
+          {/* cover and bandcamp end */}
           <div class={releasePageStyles.creditsWrapper}>
             <div
               class={releasePageStyles.credits}

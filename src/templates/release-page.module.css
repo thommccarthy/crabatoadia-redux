@@ -23,9 +23,9 @@
 }
 
 .coverAndBandcampWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5em;
 }
 
 .bandcampWrapper {
@@ -35,10 +35,13 @@
   position: relative;
   width: 100%;
   padding: 1em;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 26em;
-  background-color: #cab91dde;
+  /* margin-left: auto;
+  margin-right: auto; */
+  max-width: 24em;
+  background-color: black;
+  border-top: solid #cab91d 8px;
+  border-bottom: solid #cab91d 8px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.842);
 }
 
 .playerAndHeaderWrapper {
@@ -51,6 +54,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: "Roboto Slab";
+  color: white;
   font-size: 1.1em;
   margin-top: 0.1em;
   margin-bottom: 0.2em;
@@ -98,4 +102,23 @@
   font-family: "Roboto Slab";
   line-height: 1.3;
   font-size: 1em;
+}
+
+@media screen and (min-width: 900px) {
+  .coverAndBandcampWrapper {
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0.5em;
+  }
+
+  .bandcampWrapper {
+    margin-left: auto;
+    margin-right: auto;
+    grid-area: 1/4/2/6;
+    max-width: 90%;
+  }
+
+  .albumArt {
+    grid-area: 1/1/2/4;
+  }
 }

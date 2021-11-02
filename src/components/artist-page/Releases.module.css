@@ -4,32 +4,33 @@
 }
 
 .releasesGrid {
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; */
-
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(315px, 372px));
 }
 
-/* .releasesGrid:first-child {
-  margin-right: 1.5em;
-} */
-
 .singleAlbum {
   max-width: 21em;
   text-decoration: none;
+  transition: 0.2s;
+}
+
+.singleAlbum:hover {
+  transform: scale(1.02);
 }
 
 .albumCover {
-  box-shadow: 8px 8px 8px #cab91d;
+  box-shadow: 6px 6px 6px #cab91d;
+  transition: 0.4s;
+}
+
+.albumCover:hover {
+  box-shadow: 10px 10px 10px #cab91d;
 }
 
 .albumArtist {
   font-family: "Roboto Slab Black";
   text-decoration: none;
   font-style: normal;
-
   color: black;
 }
 
