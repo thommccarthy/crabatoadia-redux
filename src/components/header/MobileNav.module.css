@@ -13,6 +13,7 @@
   width: 70%;
   /* max-width: 10em; */
   justify-items: flex-start;
+  cursor: pointer;
 }
 
 .link {
@@ -62,6 +63,7 @@
 .icon {
   padding-right: 0.25em;
   padding-left: 0.25em;
+  cursor: pointer;
 }
 
 .closeIcon {
@@ -77,6 +79,7 @@
   color: #cab91d;
   background: rgba(0, 0, 0, 0.904);
   z-index: 99;
+  cursor: pointer;
 }
 
 .menuIcon {
@@ -93,6 +96,7 @@
   transition: 1s;
   height: 1em;
   width: 1em;
+  cursor: pointer;
 }
 
 .menuIconWrapper {

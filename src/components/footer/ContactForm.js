@@ -3,7 +3,7 @@ import * as contactFormStyles from "./ContactForm.module.css"
 
 const ContactForm = () => {
   return (
-    <div>
+    <div className={contactFormStyles.wrapper}>
       <div className={contactFormStyles.bookingWrapper}>
         <div>
           <h4 className={contactFormStyles.bookingText}>
@@ -14,7 +14,13 @@ const ContactForm = () => {
       {/* form grid */}
       <div className={contactFormStyles.formGrid}>
         <div className={contactFormStyles.formWrapper}>
-          <form id="contact" className={contactFormStyles.formWrapper}>
+          {/* form start */}
+          <form
+            id="contact"
+            method="POST"
+            data-netlify="true"
+            className={contactFormStyles.formWrapper}
+          >
             <label className={contactFormStyles.contactUs} for="name">
               Contact Us
             </label>
@@ -22,6 +28,7 @@ const ContactForm = () => {
             <input type="email" id="email" name="email" placeholder="email*" />
             <textarea type="text" placeholder="message*" />
           </form>
+          {/* form end */}
         </div>
         <span className={contactFormStyles.or}>-or-</span>
         <span className={contactFormStyles.emailUs}>

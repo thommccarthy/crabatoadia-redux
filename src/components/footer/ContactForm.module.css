@@ -8,6 +8,9 @@
   src: url(../../typography/RobotoCondensed-BoldItalic.ttf);
 }
 
+.wrapper {
+}
+
 .bookingWrapper {
   display: block;
   margin-left: auto;
@@ -56,7 +59,7 @@
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5em;
+  margin-top: 3em;
   margin-bottom: 2em;
 }
 
@@ -133,7 +136,13 @@ textarea {
   }
 
   .emailUs {
-    font-size: 3em;
+    font-size: 2em;
     word-wrap: normal;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .emailUs {
+    font-size: 3em;
   }
 }
