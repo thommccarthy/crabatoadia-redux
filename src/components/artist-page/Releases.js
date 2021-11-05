@@ -46,25 +46,29 @@ export default function Releases({ artistName }) {
 
   return (
     <div className={releasesStyles.releasesGrid}>
-      {filteredReleases.map(edge => (
-        <Link
-          to={`../../releases${edge.node.fields.slug}`}
-          className={releasesStyles.singleAlbum}
-        >
-          <GatsbyImage
-            className={releasesStyles.albumCover}
-            image={
-              edge.node.frontmatter.albumArt.childImageSharp.gatsbyImageData
-            }
-          />
-          <p className={releasesStyles.albumArtist}>
-            {edge.node.frontmatter.artistName[0]}
-          </p>
-          <p className={releasesStyles.albumTitle}>
-            {edge.node.frontmatter.title}
-          </p>
-        </Link>
-      ))}
+      {filteredReleases.length >= 1 ? (
+        filteredReleases.map(edge => (
+          <Link
+            to={`../../releases${edge.node.fields.slug}`}
+            className={releasesStyles.singleAlbum}
+          >
+            <GatsbyImage
+              className={releasesStyles.albumCover}
+              image={
+                edge.node.frontmatter.albumArt.childImageSharp.gatsbyImageData
+              }
+            />
+            <p className={releasesStyles.albumArtist}>
+              {edge.node.frontmatter.artistName[0]}
+            </p>
+            <p className={releasesStyles.albumTitle}>
+              {edge.node.frontmatter.title}
+            </p>
+          </Link>
+        ))
+      ) : (
+        <p className={releasesStyles.comingSoon}>Coming Soon!</p>
+      )}
     </div>
   )
 }

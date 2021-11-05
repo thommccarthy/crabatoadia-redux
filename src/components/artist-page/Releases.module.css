@@ -39,3 +39,13 @@
   text-decoration: none;
   color: black;
 }
+
+.comingSoon {
+  font-family: "Roboto Mono Italic";
+  font-size: 2.1em;
+  background: #cab91d;
+  padding: 0.2em;
+  max-width: 8em;
+  transform: skewY(-2deg);
+  box-shadow: 2px 2px 2px black;
+}
