@@ -111,7 +111,9 @@ class StoreItem extends React.Component {
                   item.frontmatter.image.childImageSharp.fluid.src
                 }
                 // must be url where button is
-                data-item-url={"https://crabatoadia.com" + item.fields.slug}
+                data-item-url={
+                  "https://crabatoadia.com/store" + item.fields.slug
+                }
                 data-item-custom1-name={
                   item.frontmatter.customField
                     ? item.frontmatter.customField.name
