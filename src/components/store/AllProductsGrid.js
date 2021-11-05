@@ -8,6 +8,7 @@ const AllProductsGrid = () => {
     {
       store: allMarkdownRemark(
         filter: { fileAbsolutePath: { regex: "/content/store-items/" } }
+        sort: { fields: frontmatter___id, order: [ASC] }
       ) {
         edges {
           node {
