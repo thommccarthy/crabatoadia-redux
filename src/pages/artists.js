@@ -4,11 +4,9 @@ import Layout from "../components/layout"
 
 const Artists = () => {
   return (
-    <div>
-      <Layout>
-        <AllArtists />
-      </Layout>
-    </div>
+    <Layout>
+      <AllArtists />
+    </Layout>
   )
 }
 

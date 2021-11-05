@@ -45,7 +45,7 @@ export default function Releases({ artistName }) {
   console.log(filteredReleases)
 
   return (
-    <div className={releasesStyles.releasesGrid}>
+    <section className={releasesStyles.releasesGrid}>
       {filteredReleases.length >= 1 ? (
         filteredReleases.map(edge => (
           <Link
@@ -53,6 +53,7 @@ export default function Releases({ artistName }) {
             className={releasesStyles.singleAlbum}
           >
             <GatsbyImage
+              alt={`${edge.node.frontmatter.title} Album Cover`}
               className={releasesStyles.albumCover}
               image={
                 edge.node.frontmatter.albumArt.childImageSharp.gatsbyImageData
@@ -69,6 +70,6 @@ export default function Releases({ artistName }) {
       ) : (
         <p className={releasesStyles.comingSoon}>Coming Soon!</p>
       )}
-    </div>
+    </section>
   )
 }

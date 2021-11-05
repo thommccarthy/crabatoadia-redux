@@ -1,0 +1,20 @@
+.header {
+  display: block;
+  width: 90%;
+  max-width: 6em;
+  font-family: "Roboto Mono";
+  padding: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  transform: skewX(4deg);
+  margin-top: 4em;
+  background: #cab91d;
+  box-shadow: 6px 6px 6px black;
+}
+
+@media screen and (min-width: 700px) {
+  .header {
+    max-width: 15em;
+    padding: 2em;
+  }
+}

@@ -32,7 +32,7 @@ const AllProductsGrid = () => {
   `)
 
   return (
-    <div className={allProductsGridStyles.wrapper}>
+    <section className={allProductsGridStyles.wrapper}>
       <div className={allProductsGridStyles.productsGrid}>
         {data.store.edges.map(edge => (
           <Link
@@ -41,6 +41,7 @@ const AllProductsGrid = () => {
           >
             <div>
               <GatsbyImage
+                alt={`${edge.node.frontmatter.title} product image`}
                 image={
                   edge.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
@@ -61,7 +62,7 @@ const AllProductsGrid = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

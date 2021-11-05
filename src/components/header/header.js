@@ -7,18 +7,19 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Header = () => {
   return (
-    <div id="header" className={headerStyles.wrapper}>
-      <div className={headerStyles.linesWrapperWrapper}>
+    <header id="header" className={headerStyles.wrapper}>
+      <div aria-hidden="true" className={headerStyles.linesWrapperWrapper}>
         <div className={headerStyles.linesWrapper}>
           <div className={headerStyles.lineBlack}></div>
           <div className={headerStyles.lineYellow}></div>
           <div className={headerStyles.lineBlack}></div>
         </div>
       </div>
-      <div className={headerStyles.headerGrid}>
+      <nav className={headerStyles.headerGrid}>
         <div>
           <Link to="/">
             <StaticImage
+              alt="Crabatoadia Logo"
               src="../../images/crabatoadia_stamp.png"
               className={headerStyles.logo}
               style={{
@@ -32,6 +33,7 @@ const Header = () => {
 
         <div>
           <StaticImage
+            alt="Crabatoadia Logo Illustration"
             src="../../images/crabatoad_stamp.jpg"
             className={headerStyles.crabatoad}
             style={{
@@ -42,6 +44,7 @@ const Header = () => {
           />
         </div>
         {/* links */}
+
         <ul className={headerStyles.linksList}>
           <li className={headerStyles.linkWrapper}>
             <Link className={headerStyles.link} to="/">
@@ -67,8 +70,8 @@ const Header = () => {
             </a>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </header>
   )
 }
 

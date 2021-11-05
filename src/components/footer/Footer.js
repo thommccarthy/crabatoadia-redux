@@ -5,10 +5,10 @@ import * as footerStyles from "./Footer.module.css"
 
 const Footer = () => {
   return (
-    <div id="footer" className={footerStyles.wrapper}>
+    <footer id="footer" className={footerStyles.wrapper}>
       <ContactForm />
       <BackToTop />
-    </div>
+    </footer>
   )
 }
 

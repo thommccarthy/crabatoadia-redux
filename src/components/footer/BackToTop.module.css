@@ -1,11 +1,19 @@
 .backToTopButton {
   display: grid;
+  -webkit-appearance: none;
+
+  appearance: none;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   flex-direction: row;
   cursor: pointer;
   position: relative;
+  width: 100%;
+  border-left: none;
+  border-right: none;
   height: 8em;
+  margin-bottom: 0;
+  padding-bottom: 0;
   background: black;
   border-top: solid #cab91d 8px;
   border-bottom: solid #cab91d 8px;

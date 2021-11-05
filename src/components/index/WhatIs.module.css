@@ -18,6 +18,7 @@
 .headerWrapper {
   background-color: black;
   padding-top: 1em;
+  font-size: 1.4em;
   padding-bottom: 1em;
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.671);
 }
@@ -51,7 +52,6 @@
   position: absolute;
   overflow: hidden;
   max-width: 25em;
-
   top: 95px;
   left: 0;
   right: 500px;
@@ -60,7 +60,6 @@
 
 .linesList {
   position: absolute;
-
   left: -10px;
   top: 0;
   right: 20px;

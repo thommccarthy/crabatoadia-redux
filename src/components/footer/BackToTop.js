@@ -6,13 +6,13 @@ import { StaticImage } from "gatsby-plugin-image"
 const BackToTop = () => {
   return (
     <div>
-      {/* <p className={backToTopStyles.copyright}>copyright 2021 crabatoadia</p> */}
       <a
         onClick={() => scrollTo("#header")}
         className={backToTopStyles.backToTopButton}
       >
         <div className={backToTopStyles.arrowWrapper}>
           <StaticImage
+            alt="White arrow pointing to top of browser."
             className={backToTopStyles.arrow}
             src="../../images/white-arrow-png-41963.png"
           />
@@ -21,6 +21,7 @@ const BackToTop = () => {
           <p className={backToTopStyles.copyright}>2021 Crabatoadia</p>
           <div className={backToTopStyles.stampWrapper}>
             <StaticImage
+              alt=""
               className={backToTopStyles.stamp}
               src="../../images/crabatoad_stamp_inverted.png"
             />

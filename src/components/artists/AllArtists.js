@@ -37,7 +37,7 @@ const AllArtists = () => {
   const { edges } = data.artist
 
   return (
-    <div className={allArtistsStyles.wrapper}>
+    <section className={allArtistsStyles.wrapper}>
       <h1 className={allArtistsStyles.header}>Artists</h1>
       <div className={allArtistsStyles.artistsGrid}>
         {edges.map(edge => (
@@ -47,6 +47,7 @@ const AllArtists = () => {
               className={allArtistsStyles.featuredPhotoWrapper}
             >
               <GatsbyImage
+                alt={`${edge.node.frontmatter.title} Featured Photo`}
                 className={allArtistsStyles.featuredPhoto}
                 image={
                   edge.node.frontmatter.featuredPhoto.childImageSharp
@@ -60,7 +61,7 @@ const AllArtists = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }
 

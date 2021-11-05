@@ -70,11 +70,12 @@ class StoreItem extends React.Component {
 
     return (
       <Layout>
-        <div>
+        <section>
           <h1 className={storeItemStyles.title}>{item.frontmatter.title}</h1>
           <div className={storeItemStyles.singleProductGrid}>
             <div className={storeItemStyles.imageWrapper}>
               <GatsbyImage
+                alt={`${item.frontmatter.title} product photo`}
                 image={item.frontmatter.image.childImageSharp.gatsbyImageData}
               />
             </div>
@@ -142,7 +143,7 @@ class StoreItem extends React.Component {
           <Link to="/store" className={storeItemStyles.backToStore}>
             Back to Store
           </Link>
-        </div>
+        </section>
       </Layout>
     )
   }

@@ -8,9 +8,6 @@
   src: url(../../typography/RobotoCondensed-BoldItalic.ttf);
 }
 
-.wrapper {
-}
-
 .bookingWrapper {
   display: block;
   margin-left: auto;
@@ -46,7 +43,6 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-
   font-style: italic;
   font-size: 1.8em;
   padding: 1.6em;

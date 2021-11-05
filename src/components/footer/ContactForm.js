@@ -40,7 +40,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className={contactFormStyles.wrapper}>
+    <section className={contactFormStyles.wrapper}>
       <div className={contactFormStyles.bookingWrapper}>
         <div>
           <h4 className={contactFormStyles.bookingText}>
@@ -108,7 +108,7 @@ const ContactForm = () => {
           </a>{" "}
         </span>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -6,9 +6,9 @@ const WhatIs = () => {
   return (
     <div className={whatIsStyles.wrapper}>
       <div className={whatIsStyles.headerWrapper}>
-        <h1 className={whatIsStyles.header}>
+        <h2 className={whatIsStyles.header}>
           WHAT IS CRABATOADIA (crab-uh-toad-ee-uh)?
-        </h1>
+        </h2>
       </div>
       <div className={whatIsStyles.linesWrapper}>
         <div className={whatIsStyles.linesList}>

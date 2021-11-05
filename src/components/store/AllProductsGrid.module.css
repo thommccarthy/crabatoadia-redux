@@ -1,6 +1,5 @@
 .productsGrid {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(20em, 30em)); */
   grid-template-columns: 1fr;
   max-width: 95%;
   margin-left: auto;
@@ -29,9 +28,6 @@
 
 .productPrice {
   font-family: "Roboto Slab";
-}
-
-.productImage {
 }
 
 .shopNowLink {

@@ -52,7 +52,7 @@ const LatestReleases = () => {
   }
 
   return (
-    <div className={latestReleasesStyles.wrapper}>
+    <section className={latestReleasesStyles.wrapper}>
       <div className={latestReleasesStyles.headerWrapper}>
         <h1 className={latestReleasesStyles.header}>Latest Releases</h1>
       </div>
@@ -64,6 +64,7 @@ const LatestReleases = () => {
           className={latestReleasesStyles.singleAlbumWrapper}
         >
           <GatsbyImage
+            alt={`${secondNewestAlbum.albumTitle} Album Cover`}
             className={latestReleasesStyles.albumCover}
             image={secondNewestAlbum.albumCover}
           />
@@ -80,6 +81,7 @@ const LatestReleases = () => {
           className={latestReleasesStyles.singleAlbumWrapper}
         >
           <GatsbyImage
+            alt={`${newestAlbum.albumTitle} Album Cover`}
             className={latestReleasesStyles.albumCover}
             image={newestAlbum.albumCover}
           />
@@ -91,7 +93,7 @@ const LatestReleases = () => {
           </p>
         </Link>
       </div>
-    </div>
+    </section>
   )
 }
 
