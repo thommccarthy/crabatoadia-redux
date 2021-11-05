@@ -1,0 +1,70 @@
+.productsGrid {
+  display: grid;
+  /* grid-template-columns: repeat(auto-fit, minmax(20em, 30em)); */
+  grid-template-columns: 1fr;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.singleItemLink {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  justify-items: center;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+  max-width: 32em;
+  padding: 1em;
+  margin-bottom: 1em;
+}
+
+.productTitle {
+  font-family: "Roboto Slab";
+  font-size: 1.2em;
+  margin-bottom: 0;
+}
+
+.productPrice {
+  font-family: "Roboto Slab";
+}
+
+.productImage {
+}
+
+.shopNowLink {
+  font-family: "Roboto Mono Bold";
+  margin-top: 1em;
+  text-decoration: none;
+  background: #cab91d;
+  padding: 1em 2em 1em 2em;
+  color: black;
+  transition: 0.2s;
+}
+
+.shopNowLink:hover {
+  opacity: 0.93;
+  transform: scale(1.01);
+  box-shadow: 3px 3px 3px black;
+}
+
+@media screen and (min-width: 825px) {
+  .productsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .productsGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .productsGrid {
+    max-width: 75%;
+  }
+}

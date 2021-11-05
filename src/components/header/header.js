@@ -54,13 +54,9 @@ const Header = () => {
             </Link>
           </li>
           <li className={headerStyles.linkWrapper}>
-            <a
-              className={headerStyles.link}
-              href="https://crabatoadia-store.square.site/"
-              target="__blank"
-            >
+            <Link className={headerStyles.link} to="/store">
               Store
-            </a>
+            </Link>
           </li>
           <li className={headerStyles.linkWrapper}>
             <a

@@ -1,8 +1,6 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
+require("dotenv").config({
+  path: `.env`,
+})
 
 module.exports = {
   /* Your site config here */
@@ -30,6 +28,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey: process.env.SNIPCART_API_KEY,
+        autopop: true,
+      },
+    },
+
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
@@ -48,6 +54,13 @@ module.exports = {
       options: {
         name: `markdown-pages`,
         path: `${__dirname}/content/release/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/content/store-items/`,
       },
     },
     {

@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Roboto Mono Italic";
+  src: url(../typography/RobotoMono-Italic.ttf);
+}
+
+.singleProductGrid {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  max-width: 40em;
+}
+
+.title {
+  display: block;
+  position: relative;
+  font-family: "Roboto Mono Italic";
+  text-align: center;
+  max-width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 2px 2px #cab91d;
+  margin-top: 3em;
+  font-size: 2em;
+}
+
+.price {
+  font-family: "Roboto Mono";
+}
+
+.selectButton {
+  background: #cab91d;
+  width: 7em;
+  font-family: "Roboto Slab";
+  padding: 0.5em 0.7em;
+  cursor: pointer;
+  margin-bottom: 2em;
+}
+
+.addToCartButton {
+  background: #cab91d;
+  width: 12em;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab";
+  padding: 0.5em 0.9em;
+  cursor: pointer;
+  margin-bottom: 2em;
+  transition: 0.1s;
+  box-shadow: 2px 2px 2px black;
+}
+
+.addToCartButton:hover {
+  box-shadow: 4px 4px 4px black;
+  transform: scale(1.01);
+}
+
+.description {
+  font-family: "Roboto Mono";
+  font-size: 1.3em;
+}
+
+/* .title:after {
+  content: "";
+  height: 6px;
+  width: 100px;
+  display: block;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -1em;
+  background: black;
+} */
+
+.imageWrapper {
+  display: block;
+  position: relative;
+  max-width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  /* max-width: 90%; */
+  margin-top: 0.5em;
+}
+
+.cart {
+  position: fixed;
+  bottom: 1%;
+  right: 1%;
+  z-index: 30;
+  background: black;
+  width: 6em;
+  color: #cab91d;
+  border: none;
+  cursor: pointer;
+  font-family: "Roboto Slab";
+
+  margin-top: 3.1em;
+  padding: 0.6em 0.9em;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.657);
+  transition: 0.1s;
+}
+
+.cart:hover {
+  opacity: 0.93;
+  transform: scale(1.005);
+}
+
+.backToStore {
+  display: block;
+  background: black;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+  padding: 0.9em 0.8em;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.4em;
+  font-family: "Roboto Black";
+  width: 10em;
+  margin-top: 3em;
+}
+
+.backToStore:hover {
+  opacity: 0.92;
+}
+
+@media screen and (min-width: 850px) {
+  .singleProductGrid {
+    grid-template-columns: 1fr 1fr;
+    max-width: 70em;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1050px) {
+  .description {
+    font-size: 1.6em;
+  }
+
+  .price {
+    font-size: 1.3em;
+  }
+
+  .addToCartButton {
+    font-size: 1.3em;
+  }
+}

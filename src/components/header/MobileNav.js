@@ -66,13 +66,13 @@ const MobileNav = () => {
           >
             Artists
           </Link>
-          <a
+          <Link
             onClick={closeMenu}
             className={mobileNavStyles.link}
-            href="https://crabatoadia-store.square.site/"
+            to="/store"
           >
             Store
-          </a>
+          </Link>
           <a
             className={mobileNavStyles.link}
             onClick={() => {
