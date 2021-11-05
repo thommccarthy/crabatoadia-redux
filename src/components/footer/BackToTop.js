@@ -17,6 +17,15 @@ const BackToTop = () => {
             src="../../images/white-arrow-png-41963.png"
           />
         </div>
+        <div className={backToTopStyles.copyrightWrapper}>
+          <p className={backToTopStyles.copyright}>2021 Crabatoadia</p>
+          <div className={backToTopStyles.stampWrapper}>
+            <StaticImage
+              className={backToTopStyles.stamp}
+              src="../../images/crabatoad_stamp_inverted.png"
+            />
+          </div>
+        </div>
       </a>
     </div>
   )

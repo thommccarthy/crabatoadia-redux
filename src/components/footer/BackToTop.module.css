@@ -1,5 +1,8 @@
 .backToTopButton {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  flex-direction: row;
   cursor: pointer;
   position: relative;
   height: 8em;
@@ -14,20 +17,38 @@
 }
 
 .arrowWrapper {
+  grid-area: 1/1/3/2;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+.copyrightWrapper {
+  grid-area: 1/1/3/2;
+  display: flex;
+  /* margin-left: auto;
+  margin-right: auto; */
+  margin-left: 2em;
+  margin-bottom: 0;
+  margin-top: 5em;
+}
+
+.stampWrapper {
+  width: 2.5em;
+  margin-bottom: 2em;
+}
+
 .copyright {
   font-family: "Roboto Slab";
-  text-align: center;
+  /* text-align: center; */
   font-style: italic;
+  font-size: 0.8em;
+  color: white;
 }
 
 .arrow {
   transform: rotate(-90deg);
-  width: 7em;
+  width: 5em;
   margin-left: auto;
   margin-right: auto;
 }
