@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import * as backToTopStyles from "./BackToTop.module.css"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import { StaticImage } from "gatsby-plugin-image"
@@ -14,7 +14,9 @@ const BackToTop = () => {
       setShowScroll(false)
     }
   }
-  window.addEventListener("scroll", checkScrollTop)
+  useEffect(() => {
+    window.addEventListener("scroll", checkScrollTop)
+  }, [])
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
