@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
+    `gatsby-plugin-layout`,
     `gatsby-plugin-smoothscroll`,
     `gatsby-transformer-sharp`,
     `gatsby-remark-relative-images`,

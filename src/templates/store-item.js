@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as storeItemStyles from "./store-item.module.css"
@@ -69,96 +68,88 @@ class StoreItem extends React.Component {
     const item = this.props.data.markdownRemark
 
     return (
-      <Layout>
-        <section>
-          <h1
-            data-sal="slide-up"
-            data-sal-delay="100"
-            data-sal-duration="600"
-            data-sal-easing="easeInBack"
-            className={storeItemStyles.title}
-          >
-            {item.frontmatter.title}
-          </h1>
-          <div className={storeItemStyles.singleProductGrid}>
-            <div className={storeItemStyles.imageWrapper}>
-              <GatsbyImage
-                alt={`${item.frontmatter.title} product photo`}
-                image={item.frontmatter.image.childImageSharp.gatsbyImageData}
-              />
-            </div>
-            <div className={storeItemStyles.priceToButtons}>
-              <p className={storeItemStyles.price}>
-                $
-                {this.updatePrice(
-                  item.frontmatter.price,
-                  item.frontmatter.customField.values
-                )}
-              </p>
-              <p
-                data-sal="flip-right"
-                data-sal-delay="200"
-                data-sal-duration="600"
-                data-sal-easing="easeInBack"
-                className={storeItemStyles.description}
-              >
-                {item.frontmatter.description}
-              </p>
-              <select
-                className={storeItemStyles.selectButton}
-                id={item.frontmatter.customField.name}
-                onChange={e => this.setSelected(e.target.value)}
-                value={this.state.selected}
-              >
-                {item.frontmatter.customField.values.map(option => (
-                  <option key={option.name}>{option.name}</option>
-                ))}
-              </select>
-              <br />
-              <button
-                className={`snipcart-add-item ${storeItemStyles.addToCartButton}`}
-                data-item-id={item.frontmatter.id}
-                data-item-price={item.frontmatter.price}
-                data-item-name={item.frontmatter.title}
-                data-item-description={item.frontmatter.description}
-                // must use fluid and src here in query
-                data-item-image={
-                  item.frontmatter.image.childImageSharp.fluid.src
-                }
-                // must be url where button is
-                data-item-url={
-                  "https://crabatoadia.com/store" + item.fields.slug
-                }
-                data-item-custom1-name={
-                  item.frontmatter.customField
-                    ? item.frontmatter.customField.name
-                    : null
-                }
-                data-item-custom1-options={this.createString(
-                  item.frontmatter.customField.values
-                )}
-                data-item-custom1-value={this.state.selected}
-              >
-                Add to Cart
-              </button>
-              {this.state.items > 0 ? (
-                <div
-                  className={`snipcart-summary ${storeItemStyles.cartWrapper}`}
-                >
-                  <button
-                    className={`snipcart-checkout ${storeItemStyles.cart}`}
-                  >
-                    cart ({this.state.items})
-                  </button>
-                </div>
-              ) : null}
-            </div>
+      <section>
+        <h1
+          data-sal="slide-up"
+          data-sal-delay="100"
+          data-sal-duration="600"
+          data-sal-easing="easeInBack"
+          className={storeItemStyles.title}
+        >
+          {item.frontmatter.title}
+        </h1>
+        <div className={storeItemStyles.singleProductGrid}>
+          <div className={storeItemStyles.imageWrapper}>
+            <GatsbyImage
+              alt={`${item.frontmatter.title} product photo`}
+              image={item.frontmatter.image.childImageSharp.gatsbyImageData}
+            />
           </div>
-          <Link to="/store" className={storeItemStyles.backToStore}>
-            Back to Store
-          </Link>
-        </section>
-      </Layout>
+          <div className={storeItemStyles.priceToButtons}>
+            <p className={storeItemStyles.price}>
+              $
+              {this.updatePrice(
+                item.frontmatter.price,
+                item.frontmatter.customField.values
+              )}
+            </p>
+            <p
+              data-sal="flip-right"
+              data-sal-delay="200"
+              data-sal-duration="600"
+              data-sal-easing="easeInBack"
+              className={storeItemStyles.description}
+            >
+              {item.frontmatter.description}
+            </p>
+            <select
+              className={storeItemStyles.selectButton}
+              id={item.frontmatter.customField.name}
+              onChange={e => this.setSelected(e.target.value)}
+              value={this.state.selected}
+            >
+              {item.frontmatter.customField.values.map(option => (
+                <option key={option.name}>{option.name}</option>
+              ))}
+            </select>
+            <br />
+            <button
+              className={`snipcart-add-item ${storeItemStyles.addToCartButton}`}
+              data-item-id={item.frontmatter.id}
+              data-item-price={item.frontmatter.price}
+              data-item-name={item.frontmatter.title}
+              data-item-description={item.frontmatter.description}
+              // must use fluid and src here in query
+              data-item-image={item.frontmatter.image.childImageSharp.fluid.src}
+              // must be url where button is
+              data-item-url={"https://crabatoadia.com/store" + item.fields.slug}
+              data-item-custom1-name={
+                item.frontmatter.customField
+                  ? item.frontmatter.customField.name
+                  : null
+              }
+              data-item-custom1-options={this.createString(
+                item.frontmatter.customField.values
+              )}
+              data-item-custom1-value={this.state.selected}
+            >
+              Add to Cart
+            </button>
+            {this.state.items > 0 ? (
+              <div
+                className={`snipcart-summary ${storeItemStyles.cartWrapper}`}
+              >
+                <button className={`snipcart-checkout ${storeItemStyles.cart}`}>
+                  cart ({this.state.items})
+                </button>
+              </div>
+            ) : null}
+          </div>
+        </div>
+        <Link to="/store" className={storeItemStyles.backToStore}>
+          Back to Store
+        </Link>
+      </section>
     )
   }
 }
