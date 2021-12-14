@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
+import { FaShoppingCart } from "react-icons/fa"
 import { GatsbyImage } from "gatsby-plugin-image"
 import * as storeItemStyles from "./store-item.module.css"
 
@@ -140,7 +141,8 @@ class StoreItem extends React.Component {
                 className={`snipcart-summary ${storeItemStyles.cartWrapper}`}
               >
                 <button className={`snipcart-checkout ${storeItemStyles.cart}`}>
-                  cart ({this.state.items})
+                  <FaShoppingCart className={storeItemStyles.basketIcon} /> (
+                  {this.state.items})
                 </button>
               </div>
             ) : null}

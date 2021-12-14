@@ -55,25 +55,14 @@
   transform: scale(1.01);
 }
 
+.basketIcon {
+  font-size: 1.5em;
+}
+
 .description {
   font-family: "Roboto Mono";
   font-size: 1.3em;
 }
-
-/* .title:after {
-  content: "";
-  height: 6px;
-  width: 100px;
-  display: block;
-  position: absolute;
-  bottom: 1%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -1em;
-  background: black;
-} */
 
 .imageWrapper {
   display: block;
@@ -87,16 +76,15 @@
 
 .cart {
   position: fixed;
-  bottom: 1%;
+  bottom: 5%;
   right: 1%;
   z-index: 30;
   background: black;
-  width: 6em;
+  width: 5em;
   color: #cab91d;
   border: none;
   cursor: pointer;
   font-family: "Roboto Slab";
-
   margin-top: 3.1em;
   padding: 0.6em 0.9em;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.657);

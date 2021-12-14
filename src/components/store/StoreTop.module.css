@@ -48,11 +48,11 @@
 
 .cart {
   position: fixed;
-  bottom: 1%;
+  bottom: 5%;
   right: 1%;
   z-index: 30;
   background: black;
-  width: 6em;
+  width: 5em;
   color: #cab91d;
   border: none;
   cursor: pointer;
@@ -63,7 +63,11 @@
   transition: 0.1s;
 }
 
+.basketIcon {
+  font-size: 1.5em;
+}
+
 .cart:hover {
   opacity: 0.93;
-  transform: scale(1.005);
+  transform: scale(1.01);
 }

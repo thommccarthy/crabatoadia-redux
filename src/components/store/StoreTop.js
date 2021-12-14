@@ -1,4 +1,5 @@
 import React from "react"
+import { FaShoppingCart } from "react-icons/fa"
 import * as storeTopStyles from "./StoreTop.module.css"
 
 class StoreTop extends React.Component {
@@ -42,7 +43,8 @@ class StoreTop extends React.Component {
         {this.state.items > 0 ? (
           <div className={`snipcart-summary ${storeTopStyles.cartWrapper}`}>
             <button className={`snipcart-checkout ${storeTopStyles.cart}`}>
-              cart ({this.state.items})
+              <FaShoppingCart className={storeTopStyles.basketIcon} /> (
+              {this.state.items})
             </button>
           </div>
         ) : null}
