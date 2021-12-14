@@ -4,13 +4,25 @@ import { StaticImage } from "gatsby-plugin-image"
 
 const WhatIs = () => {
   return (
-    <div className={whatIsStyles.wrapper}>
+    <div
+      data-sal="slide-right"
+      data-sal-delay="100"
+      data-sal-duration="300"
+      data-sal-easing="easeInBack"
+      className={whatIsStyles.wrapper}
+    >
       <div className={whatIsStyles.headerWrapper}>
         <h2 className={whatIsStyles.header}>
           WHAT IS CRABATOADIA (crab-uh-toad-ee-uh)?
         </h2>
       </div>
-      <div className={whatIsStyles.linesWrapper}>
+      <div
+        data-sal="slide-right"
+        data-sal-delay="600"
+        data-sal-duration="600"
+        data-sal-easing="easeInBack"
+        className={whatIsStyles.linesWrapper}
+      >
         <div className={whatIsStyles.linesList}>
           <li className={whatIsStyles.lineBlack}></li>
           <li className={whatIsStyles.lineYellow}></li>

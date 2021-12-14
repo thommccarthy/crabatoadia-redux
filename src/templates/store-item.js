@@ -71,7 +71,15 @@ class StoreItem extends React.Component {
     return (
       <Layout>
         <section>
-          <h1 className={storeItemStyles.title}>{item.frontmatter.title}</h1>
+          <h1
+            data-sal="slide-up"
+            data-sal-delay="100"
+            data-sal-duration="600"
+            data-sal-easing="easeInBack"
+            className={storeItemStyles.title}
+          >
+            {item.frontmatter.title}
+          </h1>
           <div className={storeItemStyles.singleProductGrid}>
             <div className={storeItemStyles.imageWrapper}>
               <GatsbyImage
@@ -87,7 +95,13 @@ class StoreItem extends React.Component {
                   item.frontmatter.customField.values
                 )}
               </p>
-              <p className={storeItemStyles.description}>
+              <p
+                data-sal="flip-right"
+                data-sal-delay="200"
+                data-sal-duration="600"
+                data-sal-easing="easeInBack"
+                className={storeItemStyles.description}
+              >
                 {item.frontmatter.description}
               </p>
               <select

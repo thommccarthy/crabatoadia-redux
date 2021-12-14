@@ -41,7 +41,13 @@ const ContactForm = () => {
 
   return (
     <section className={contactFormStyles.wrapper}>
-      <div className={contactFormStyles.bookingWrapper}>
+      <div
+        className={contactFormStyles.bookingWrapper}
+        data-sal="flip-up"
+        data-sal-delay="200"
+        data-sal-duration="600"
+        data-sal-easing="easeInBack"
+      >
         <div>
           <h4 className={contactFormStyles.bookingText}>
             FOR BOOKING OR GENERAL QUESTIONS AND COMMENTS
@@ -98,7 +104,13 @@ const ContactForm = () => {
           {/* form end */}
         </div>
         <span className={contactFormStyles.or}>-or-</span>
-        <span className={contactFormStyles.emailUs}>
+        <span
+          data-sal="flip-left"
+          data-sal-delay="200"
+          data-sal-duration="600"
+          data-sal-easing="easeInBack"
+          className={contactFormStyles.emailUs}
+        >
           email us at{" "}
           <a
             href="mailto:crabatoadia@gmail.com"
