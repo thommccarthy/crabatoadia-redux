@@ -1,7 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import * as headerStyles from "./header.module.css"
-import { HiMenu } from "react-icons/hi"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -17,7 +17,7 @@ const Header = () => {
       </div>
       <nav className={headerStyles.headerGrid}>
         <div>
-          <Link to="/">
+          <AniLink swipe direction="left" entryOffset={80} to="/">
             <StaticImage
               alt="Crabatoadia Logo"
               src="../../images/crabatoadia_stamp.png"
@@ -28,7 +28,7 @@ const Header = () => {
                 marginRight: `auto`,
               }}
             />
-          </Link>
+          </AniLink>
         </div>
 
         <div>
@@ -47,19 +47,37 @@ const Header = () => {
 
         <ul className={headerStyles.linksList}>
           <li className={headerStyles.linkWrapper}>
-            <Link className={headerStyles.link} to="/">
+            <AniLink
+              swipe
+              direction="left"
+              entryOffset={80}
+              className={headerStyles.link}
+              to="/"
+            >
               Home
-            </Link>
+            </AniLink>
           </li>
           <li className={headerStyles.linkWrapper}>
-            <Link className={headerStyles.link} to="/artists">
+            <AniLink
+              swipe
+              direction="left"
+              entryOffset={80}
+              className={headerStyles.link}
+              to="/artists"
+            >
               Artists
-            </Link>
+            </AniLink>
           </li>
           <li className={headerStyles.linkWrapper}>
-            <Link className={headerStyles.link} to="/store">
+            <AniLink
+              swipe
+              direction="left"
+              entryOffset={80}
+              className={headerStyles.link}
+              to="/store"
+            >
               Store
-            </Link>
+            </AniLink>
           </li>
           <li className={headerStyles.linkWrapper}>
             <a
