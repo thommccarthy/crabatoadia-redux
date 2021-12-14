@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import * as headerStyles from "./header.module.css"
-import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { Link } from "gatsby"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
@@ -17,7 +16,7 @@ const Header = () => {
       </div>
       <nav className={headerStyles.headerGrid}>
         <div>
-          <AniLink swipe direction="left" entryOffset={80} to="/">
+          <Link fade direction="left" entryOffset={80} to="/">
             <StaticImage
               alt="Crabatoadia Logo"
               src="../../images/crabatoadia_stamp.png"
@@ -28,7 +27,7 @@ const Header = () => {
                 marginRight: `auto`,
               }}
             />
-          </AniLink>
+          </Link>
         </div>
 
         <div>
@@ -47,37 +46,37 @@ const Header = () => {
 
         <ul className={headerStyles.linksList}>
           <li className={headerStyles.linkWrapper}>
-            <AniLink
-              swipe
+            <Link
+              fade
               direction="left"
               entryOffset={80}
               className={headerStyles.link}
               to="/"
             >
               Home
-            </AniLink>
+            </Link>
           </li>
           <li className={headerStyles.linkWrapper}>
-            <AniLink
-              swipe
+            <Link
+              fade
               direction="left"
               entryOffset={80}
               className={headerStyles.link}
               to="/artists"
             >
               Artists
-            </AniLink>
+            </Link>
           </li>
           <li className={headerStyles.linkWrapper}>
-            <AniLink
-              swipe
+            <Link
+              fade
               direction="left"
               entryOffset={80}
               className={headerStyles.link}
               to="/store"
             >
               Store
-            </AniLink>
+            </Link>
           </li>
           <li className={headerStyles.linkWrapper}>
             <a

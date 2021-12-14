@@ -7,7 +7,7 @@ const WhatIs = () => {
     <div
       data-sal="slide-right"
       data-sal-delay="100"
-      data-sal-duration="300"
+      data-sal-duration="600"
       data-sal-easing="easeInBack"
       className={whatIsStyles.wrapper}
     >
@@ -18,7 +18,7 @@ const WhatIs = () => {
       </div>
       <div
         data-sal="slide-right"
-        data-sal-delay="600"
+        data-sal-delay="300"
         data-sal-duration="600"
         data-sal-easing="easeInBack"
         className={whatIsStyles.linesWrapper}
@@ -33,6 +33,7 @@ const WhatIs = () => {
       <div className={whatIsStyles.bioWrapper}>
         <div className={whatIsStyles.sharkManWrapper}>
           <StaticImage
+            alt="Man wearing a suit with a shark head"
             src="../../images/index/shark-man.jpg"
             className={whatIsStyles.sharkMan}
           />

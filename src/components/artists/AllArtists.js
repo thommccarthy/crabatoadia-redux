@@ -41,7 +41,7 @@ const AllArtists = () => {
       <h1 className={allArtistsStyles.header}>Artists</h1>
       <div className={allArtistsStyles.artistsGrid}>
         {edges.map(edge => (
-          <div>
+          <div key={edge.node.id}>
             <Link
               to={`${__dirname}artists${edge.node.fields.slug}`}
               className={allArtistsStyles.featuredPhotoWrapper}

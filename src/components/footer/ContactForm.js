@@ -45,7 +45,7 @@ const ContactForm = () => {
         className={contactFormStyles.bookingWrapper}
         data-sal="flip-up"
         data-sal-delay="200"
-        data-sal-duration="600"
+        data-sal-duration="800"
         data-sal-easing="easeInBack"
       >
         <div>
@@ -106,8 +106,8 @@ const ContactForm = () => {
         <span className={contactFormStyles.or}>-or-</span>
         <span
           data-sal="flip-left"
-          data-sal-delay="200"
-          data-sal-duration="600"
+          data-sal-delay="300"
+          data-sal-duration="1000"
           data-sal-easing="easeInBack"
           className={contactFormStyles.emailUs}
         >

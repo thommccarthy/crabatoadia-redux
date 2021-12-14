@@ -8,7 +8,6 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-scroll-reveal`,
-    `gatsby-plugin-transition-link`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-plugin-layout`,

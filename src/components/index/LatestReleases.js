@@ -32,7 +32,6 @@ const LatestReleases = () => {
     }
   `)
 
-  console.log(releaseData.releases)
   const newestAlbum = {
     albumTitle: releaseData.releases.edges[0].node.frontmatter.title,
     albumArtist: releaseData.releases.edges[0].node.frontmatter.artistName,

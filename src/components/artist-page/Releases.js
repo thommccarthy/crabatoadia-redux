@@ -12,6 +12,7 @@ export default function Releases({ artistName }) {
       ) {
         edges {
           node {
+            id
             fields {
               slug
             }
@@ -49,6 +50,7 @@ export default function Releases({ artistName }) {
       {filteredReleases.length >= 1 ? (
         filteredReleases.map(edge => (
           <Link
+            key={edge.node.id}
             to={`../../releases${edge.node.fields.slug}`}
             className={releasesStyles.singleAlbum}
           >
