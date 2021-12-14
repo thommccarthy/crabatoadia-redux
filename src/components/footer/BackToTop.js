@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import * as backToTopStyles from "./BackToTop.module.css"
 import scrollTo from "gatsby-plugin-smoothscroll"
-import { StaticImage } from "gatsby-plugin-image"
 import { IoIosArrowUp } from "react-icons/io"
 
 const BackToTop = () => {
@@ -14,13 +13,10 @@ const BackToTop = () => {
       setShowScroll(false)
     }
   }
+
   useEffect(() => {
     window.addEventListener("scroll", checkScrollTop)
-  }, [])
-
-  const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+  })
 
   return (
     <div>
@@ -34,13 +30,7 @@ const BackToTop = () => {
 
       <div className={backToTopStyles.copyrightWrapper}>
         <p className={backToTopStyles.copyright}>2021 Crabatoadia</p>
-        <div className={backToTopStyles.stampWrapper}>
-          {/* <StaticImage
-            alt=""
-            className={backToTopStyles.stamp}
-            src="../../images/crabatoad_stamp_inverted.png"
-          /> */}
-        </div>
+        <div className={backToTopStyles.stampWrapper}></div>
       </div>
     </div>
   )
