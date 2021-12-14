@@ -54,7 +54,7 @@ const LatestReleases = () => {
   return (
     <section className={latestReleasesStyles.wrapper}>
       <div className={latestReleasesStyles.headerWrapper}>
-        <h1 className={latestReleasesStyles.header}>Latest Releases</h1>
+        <h2 className={latestReleasesStyles.header}>Latest Releases</h2>
       </div>
       {/* seasick */}
       <div className={latestReleasesStyles.albumsWrapper}>

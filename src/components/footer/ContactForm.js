@@ -49,9 +49,9 @@ const ContactForm = () => {
         data-sal-easing="easeInBack"
       >
         <div>
-          <h4 className={contactFormStyles.bookingText}>
+          <h2 className={contactFormStyles.bookingText}>
             FOR BOOKING OR GENERAL QUESTIONS AND COMMENTS
-          </h4>
+          </h2>
         </div>
       </div>
       {/* form grid */}
@@ -69,7 +69,7 @@ const ContactForm = () => {
           >
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact"></input>
-            <h1 className={contactFormStyles.contactUs}>Contact Us</h1>
+            <h3 className={contactFormStyles.contactUs}>Contact Us</h3>
             <input
               type="text"
               id="name"
