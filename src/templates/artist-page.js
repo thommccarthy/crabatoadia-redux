@@ -19,7 +19,7 @@ export default function ArtistPage({ data }) {
         className={artistPageStyles.featuredPhoto}
       />
       <article className={artistPageStyles.bioWrapper}>
-        <h3 className={artistPageStyles.bioHeader}>Biography</h3>
+        <h2 className={artistPageStyles.bioHeader}>Biography</h2>
         <div
           className={artistPageStyles.bioText}
           dangerouslySetInnerHTML={{
@@ -28,7 +28,7 @@ export default function ArtistPage({ data }) {
         />
       </article>
       <div className={artistPageStyles.bioWrapper}>
-        <h3 className={artistPageStyles.bioHeader}>Releases</h3>
+        <h2 className={artistPageStyles.bioHeader}>Releases</h2>
         <Releases artistName={data.markdownRemark.frontmatter.title} />
       </div>
     </div>
