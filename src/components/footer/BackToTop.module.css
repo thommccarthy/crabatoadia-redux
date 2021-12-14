@@ -1,44 +1,31 @@
-.backToTopButton {
-  display: grid;
-  -webkit-appearance: none;
-
-  appearance: none;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  flex-direction: row;
-  cursor: pointer;
-  position: relative;
-  width: 100%;
-  border-left: none;
-  border-right: none;
-  height: 8em;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  background: black;
-  border-top: solid #cab91d 8px;
-  border-bottom: solid #cab91d 8px;
-  box-shadow: 9px 9px 9px 9px black;
-}
-
-.backToTopButton:hover {
-  opacity: 0.9;
-}
-
 .arrowWrapper {
-  grid-area: 1/1/3/2;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 50px;
+  width: 50px;
+  background: black;
+  bottom: 3%;
+  left: 4%;
+  font-size: 2.5em;
+  border-radius: 1%;
+  padding: 0.01em;
+  box-shadow: 4px 3px 3px black;
+  color: black;
+  background: #cab91ddf;
+  z-index: 99;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 .copyrightWrapper {
-  grid-area: 1/1/3/2;
   display: flex;
-  /* margin-left: auto;
-  margin-right: auto; */
-  margin-left: 2em;
-  margin-bottom: 0;
-  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  max-width: max-content;
 }
 
 .stampWrapper {
@@ -48,15 +35,17 @@
 
 .copyright {
   font-family: "Roboto Slab";
-  /* text-align: center; */
+  text-align: center;
   font-style: italic;
-  font-size: 0.8em;
-  color: white;
+  font-size: 1em;
+  color: black;
 }
 
 .arrow {
-  transform: rotate(-90deg);
-  width: 5em;
+  display: block;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 7%;
+  margin-bottom: auto;
 }

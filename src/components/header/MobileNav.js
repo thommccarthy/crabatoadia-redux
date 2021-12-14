@@ -9,21 +9,6 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 const MobileNav = () => {
   const [showBurger, setShowBurger] = useState(true)
 
-  const controlBurger = () => {
-    if (window.scrollY > 100) {
-      setShowBurger(false)
-    } else {
-      setShowBurger(true)
-    }
-  }
-
-  useEffect(() => {
-    window.addEventListener("scroll", controlBurger)
-    return () => {
-      window.removeEventListener("scroll", controlBurger)
-    }
-  }, [])
-
   const closeMenu = () => {
     document.getElementById("fullscreen-menu").style.top = "-100vh"
   }
