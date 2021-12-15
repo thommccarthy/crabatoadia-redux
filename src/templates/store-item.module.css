@@ -3,6 +3,11 @@
   src: url(../typography/RobotoMono-Italic.ttf);
 }
 
+@font-face {
+  font-family: "Roboto Black", sans-serif;
+  src: url(../typography/Roboto-Black.ttf);
+}
+
 .singleProductGrid {
   display: grid;
   margin-left: auto;
