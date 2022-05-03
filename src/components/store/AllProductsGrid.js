@@ -35,18 +35,18 @@ const AllProductsGrid = () => {
     <section className={allProductsGridStyles.wrapper}>
       <div className={allProductsGridStyles.productsGrid}>
         {data.store.edges.map(edge => (
-          <Link
+          <div
             className={allProductsGridStyles.singleItemLink}
             to={`.${edge.node.fields.slug}`}
           >
-            <div>
+            <Link to={`.${edge.node.fields.slug}`}>
               <GatsbyImage
                 alt={`${edge.node.frontmatter.title} product image`}
                 image={
                   edge.node.frontmatter.image.childImageSharp.gatsbyImageData
                 }
               />
-            </div>
+            </Link>
             <h2 className={allProductsGridStyles.productTitle}>
               {edge.node.frontmatter.title}
             </h2>
@@ -59,7 +59,7 @@ const AllProductsGrid = () => {
             >
               Shop Now
             </Link>
-          </Link>
+          </div>
         ))}
       </div>
     </section>
