@@ -2,7 +2,7 @@
 title: Quasaria Bognes T-shirt White
 date: 2021-11-04
 id: 5
-price: 20.00
+price: 25.00
 image: ./image1.jpg
 description: Super soft unisex style T-shirt featuring graphic of Quasaria Bognes, multi-instrumentalist from the future. Artwork by Heather DuHadaway Shropshire.
 customField:

@@ -2,7 +2,7 @@
 title: Rocky Kaminski T-shirt Black
 date: 2019-06-19
 id: 2
-price: 20.00
+price: 25.00
 image: ./image1.jpg
 description: Super soft unisex style T-shirt featuring graphic of time-traveling guitarist Rocky Kaminski. Artwork by Heather DuHadaway Shropshire.
 customField:

@@ -2,7 +2,7 @@
 title: Bottomless Pit/The Cannibal Song Unisex T-shirt
 date: 2021-11-04
 id: 1
-price: 20.00
+price: 25.00
 image: ./image1.jpg
 description: Super soft unisex style T-shirt featuring graphic image "Bottomless Pit / The Cannibal Song". Artwork by Heather DuHadaway Shropshire.
 customField:
