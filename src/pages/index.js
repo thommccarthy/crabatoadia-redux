@@ -3,6 +3,7 @@ import LatestReleases from "../components/index/LatestReleases"
 import * as indexStyles from "./index.module.css"
 import WhatIs from "../components/index/WhatIs"
 import { Helmet } from "react-helmet"
+import StoreFeatured from "../components/index/StoreFeatured"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <h1 className={indexStyles.visuallyHiddenHeader}>Crabatoadia Home</h1>
       <LatestReleases />
       <WhatIs />
+      <StoreFeatured />
     </>
   )
 }

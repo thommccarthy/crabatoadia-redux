@@ -1,0 +1,58 @@
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #cab91d;
+}
+
+body {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.CTA {
+  background-color: #cab91d;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2em 2px;
+  cursor: pointer;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 600;
+}
+
+// p {
+//   font-family: "Roboto Slab", sans-serif;
+//   font-size: 1.2rem;
+//   font-weight: 400;
+//   color: black;
+// }

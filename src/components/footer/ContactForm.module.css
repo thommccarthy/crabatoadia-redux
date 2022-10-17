@@ -55,7 +55,7 @@
   max-width: 28em;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1.7em;
+  /* margin-top: 1.7em; */
   margin-bottom: 2em;
 }
 
@@ -78,17 +78,15 @@ input[type="email"] {
   padding: 1em;
   background: black;
   width: 6em;
-  border: solid #cab91d 4px;
   color: white;
   transition: 0.1s;
   box-shadow: 4px 4px 4px black;
 }
 
 .submitButton:hover {
-  transform: scale(1.06);
   background: #cab91d;
   color: black;
-  border: solid black 4px;
+
   box-shadow: 4px 4px 4px #cab91d;
 }
 

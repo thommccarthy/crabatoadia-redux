@@ -1,3 +1,7 @@
+.wrapper {
+  background: black;
+}
+
 .arrowWrapper {
   position: fixed;
   display: flex;
@@ -23,9 +27,19 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 2em;
-  margin-top: 2em;
+  padding-bottom: 4em;
+  padding-top: 4em;
   max-width: max-content;
+  background-color: black;
+  color: #cab91d;
+}
+
+.copyrightWrapper p {
+  color: white;
+}
+.copyrightWrapper a {
+  color: #cab91d;
+  text-decoration: none;
 }
 
 .stampWrapper {

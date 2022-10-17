@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import * as layoutStyles from "./layout.module.css"
-import "normalize.css"
+import "./layout.scss"
 import Header from "../components/header/header"
 import "normalize.css"
 import Footer from "../components/footer/Footer"

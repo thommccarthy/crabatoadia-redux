@@ -92,7 +92,6 @@
 .sharkMan {
   box-shadow: 4px 4px 4px #cab91d;
   max-width: 6em;
-
   float: right;
   margin-right: 0.5em;
 }
@@ -112,7 +111,8 @@
     grid-area: 1/1/2/2;
     font-weight: bold;
     text-align: center;
-    font-size: 2em;
+    margin: auto;
+    font-size: 1.6em;
     line-height: 1.5;
   }
 
