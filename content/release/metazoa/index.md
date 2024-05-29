@@ -1,6 +1,8 @@
 ---
 title: Metazoa
 releaseDate: 2024-05-29T02:06:37.118Z
+artistName:
+  - Metazoans
 date: 2024-05-29T02:06:37.128Z
 albumArt: metazoa-1073f_cover2024_merged_light_sepiaflat_lightfont_toponly.jpg
 description: '"﻿Elegy of the Praying Mantis" is currently streaming as a preview
