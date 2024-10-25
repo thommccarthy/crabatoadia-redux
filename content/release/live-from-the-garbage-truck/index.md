@@ -1,6 +1,8 @@
 ---
 title: Live from the Garbage Truck
 releaseDate: 2024-10-25T19:03:03.817Z
+artistName:
+  - Rocky Kaminski
 date: 2024-10-25T19:03:03.830Z
 albumArt: garbage_truck_cover_final_bandcamp.jpg
 description: R﻿eleased October 25, 2024
